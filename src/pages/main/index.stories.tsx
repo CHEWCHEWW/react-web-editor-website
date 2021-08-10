@@ -11,3 +11,6 @@ export default {
 const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
 
 export const Default = Template.bind({});
+
+Default.args = {
+};

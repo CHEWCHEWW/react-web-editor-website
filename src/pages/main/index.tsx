@@ -1,4 +1,7 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -13,10 +16,28 @@ const CodeEditor = dynamic(
 const Page: React.FC = (): React.ReactElement => {
   return (
     <>
-      <Header menus={["Documentation"]} />
+      <Header>
+        <Link href="/demo" passHref>
+          <MenuName>
+            Demo
+          </MenuName>
+        </Link>
+        <MenuName target="_blank" href="https://github.com/CHEWCHEWW/react-web-editor/" rel="noreferrer">
+          <FontAwesomeIcon icon={faGithub} />
+        </MenuName>
+      </Header>
       <CodeEditor code={STYLE_EDITOR_BLOCK} />
     </>
   );
 };
+
+const MenuName = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #CDCDC9;
+  text-decoration: none;
+`;
 
 export default Page;
