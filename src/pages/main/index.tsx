@@ -1,6 +1,7 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
@@ -16,6 +17,11 @@ const CodeEditor = dynamic(
 const Page: React.FC = (): React.ReactElement => {
   return (
     <>
+      <Head>
+        <title>react-web-editor</title>
+        <meta name="description" content="react-web-editor is a simple WYSIWYG editor. You can edit component easy just using mouse click" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Header>
         <Link href="/demo" passHref>
           <MenuName>
@@ -26,10 +32,15 @@ const Page: React.FC = (): React.ReactElement => {
           <FontAwesomeIcon icon={faGithub} />
         </MenuName>
       </Header>
+      <Title>React Web Editor</Title>
       <CodeEditor code={STYLE_EDITOR_BLOCK} />
     </>
   );
 };
+
+const Title = styled.h1`
+  font-family: "Roboto Slab", serif;
+`;
 
 const MenuName = styled.a`
   display: flex;
