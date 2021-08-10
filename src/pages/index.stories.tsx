@@ -1,7 +1,6 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
 
-import * as HeaderStories from "../components/Header/index.stories";
 import Home from ".";
 
 export default {
@@ -11,14 +10,4 @@ export default {
 
 const Template: ComponentStory<typeof Home> = () => <Home />;
 
-export const LoggedIn = Template.bind({});
-
-LoggedIn.args = {
-  ...HeaderStories.LoggedIn.args,
-};
-
-export const LoggedOut = Template.bind({});
-
-LoggedOut.args = {
-  ...HeaderStories.LoggedOut.args,
-};
+export const Default = Template.bind({});
