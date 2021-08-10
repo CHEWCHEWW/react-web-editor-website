@@ -1,19 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-interface HeaderProps {
-  menus: string[]
-}
-
-const Header: React.FC<HeaderProps> = ({ menus }): React.ReactElement => {
+const Header: React.FC = ({ children }): React.ReactElement => {
   return (
     <HeaderBoard>
       <MenuField>
-        {menus.map((menu) => (
-          <MenuName key={menu}>
-            {menu}
-          </MenuName>
-        ))}
+        {children}
       </MenuField>
     </HeaderBoard>
   );
@@ -25,26 +17,22 @@ const HeaderBoard = styled.header`
   width: 100%;
   height: 3rem;
   top: 0;
+  left: 0;
   background-color: white;
   border-bottom: 1px solid #E8E8E6;
+  z-index: 5;
 `;
 
 const MenuField = styled.div`
   display: flex;
   position: fixed;
+  width: 12%;
   height: 3rem;
+  justify-content: space-around;
   align-items: center;
   top: 0;
-  right: 15rem;
-`;
-
-const MenuName = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin: auto;
-  color: #DADAD7;
+  right: 3rem;
+  color: #CDCDC9 !important;
 `;
 
 export default Header;
