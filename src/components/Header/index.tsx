@@ -15,7 +15,7 @@ const HeaderBoard = styled.header`
   display: flex;
   position: fixed;
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   top: 0;
   left: 0;
   background-color: white;
@@ -27,12 +27,12 @@ const MenuField = styled.div`
   display: flex;
   position: fixed;
   width: 12%;
-  height: 3rem;
+  height: 2rem;
   justify-content: space-around;
   align-items: center;
   top: 0;
   right: 3rem;
-  color: #CDCDC9 !important;
+  color: #CDCDC9;
 `;
 
 export default Header;
