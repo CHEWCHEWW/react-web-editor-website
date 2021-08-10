@@ -2,7 +2,6 @@ import React from "react";
 import { StyleEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
-
 const demo = () => {
   return (
     <div>
