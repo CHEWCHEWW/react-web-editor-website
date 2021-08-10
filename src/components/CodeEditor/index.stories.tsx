@@ -18,17 +18,8 @@ export default {
 
 const Template: ComponentStory<typeof CodeEditor> = (args) => <CodeEditor { ...args } />;
 
-export const Short = Template.bind({});
+export const Default = Template.bind({});
 
-Short.args = {
-  code: `function happy() {
-    console.log(30);
-  }
-  `,
-};
-
-export const Long = Template.bind({});
-
-Long.args = {
+Default.args = {
   code: STYLE_EDITOR_BLOCK,
 };
