@@ -1,4 +1,6 @@
+import dynamic from "next/dynamic";
 import React from "react";
+import { StyleEditorBlock, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import { Header } from "../../components/Header";
@@ -10,11 +12,22 @@ interface PageProps {
   onCreateAccount: () => void;
 }
 
+const CodeEditor = dynamic(
+  () => import("../../components/CodeEditor"),
+  { ssr: false }
+);
+
 const Page = ({ user, onLogin, onLogout, onCreateAccount }: PageProps) => (
   <Wrapper>
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
-
+    <CodeEditor />
     <section>
+      <TextEditorBlock 
+        width={200}
+        height={300}
+        top={400}
+        left={300}
+      />
       <h2>Pages in Storybook</h2>
       <p>
         We recommend building UIs with a{" "}
@@ -66,11 +79,9 @@ const Page = ({ user, onLogin, onLogout, onCreateAccount }: PageProps) => (
   </Wrapper>
 );
 
-export default Page;
-
 const Wrapper = styled.article`
   section {
-    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 24px;
     padding: 48px 20px;
@@ -139,3 +150,33 @@ const Wrapper = styled.article`
     fill: #1ea7fd;
   }
 `;
+
+const EditCodeEditorContainer = styled.div`
+  position: relative;
+  width: 40%;
+  height: 50%;
+  margin: 1em;
+
+  .CodeMirror {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 140%;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 4;
+    animation: upSlide .5s ease-in-out;
+  }
+
+  @keyframes upSlide {
+    from {
+      transform: translateY(1000px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+`;
+
+export default Page;
