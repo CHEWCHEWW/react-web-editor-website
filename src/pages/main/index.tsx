@@ -4,6 +4,7 @@ import { StyleEditorBlock, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import { Header } from "../../components/Header";
+import { STYLE_EDITOR_BLOCK } from "../../constants/codeExample";
 
 interface PageProps {
   user?: {};
@@ -20,7 +21,7 @@ const CodeEditor = dynamic(
 const Page = ({ user, onLogin, onLogout, onCreateAccount }: PageProps) => (
   <Wrapper>
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
-    <CodeEditor />
+    <CodeEditor code={STYLE_EDITOR_BLOCK} />
     <section>
       <TextEditorBlock 
         width={200}

@@ -1,22 +1,30 @@
 import "codemirror/lib/codemirror.css";
-import "codemirror/theme/base16-light.css";
-import "codemirror/mode/javascript/javascript";
+import "codemirror/theme/panda-syntax.css";
+import "codemirror/mode/jsx/jsx";
 
 import React from "react";
 import { UnControlled as CodeMirror } from "react-codemirror2";
 import styled from "styled-components";
 
-const CodeEditor: React.FC = (): React.ReactElement => {
+interface CodeEditorProps {
+  code: string
+}
+
+const CodeEditor: React.FC<CodeEditorProps> = ({ 
+  code, 
+}): React.ReactElement => {
   return (
     <CodeEditorWrapper>
       <CodeMirror 
-        value="function happy() {"
+        value={code}
         options={{
           lineWrapping: true,
           lineNumbers: true,
-          mode: "javascript",
-          theme: "base16-light",
+          mode: "text/jsx",
+          theme: "panda-syntax",
           extraKeys: { Enter: false },
+          tabSize: 2,
+          readOnly: true,
         }}
       />
     </CodeEditorWrapper>
@@ -24,8 +32,15 @@ const CodeEditor: React.FC = (): React.ReactElement => {
 };
 
 const CodeEditorWrapper = styled.div`
-  width: 30%;
-  font-weight: 600;
+  width: 43%;
+  font-size: 0.9rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+
+  .CodeMirror-scroll {
+    height: auto;
+    overflow: hidden;
+  }
 `;
 
 export default CodeEditor;
