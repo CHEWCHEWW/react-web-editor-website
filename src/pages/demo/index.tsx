@@ -1,19 +1,19 @@
 import React from "react";
-import { StyleEditorBlock } from "react-web-editor";
-import styled from "styled-components";
+import { TextEditorBlock } from "react-web-editor";
 
 const demo = () => {
   return (
     <div>
-      <StyleEditorBlock 
-        width={200}
-        height={300}
-        top={400}
-        left={300}
+      <TextEditorBlock 
+        width={20}
+        height={20}
+        top={20}
+        left={20}
+        unit={"rem"}
       >
         {/* <div style={{ position: "absolute", width: "100%", height: "100%",backgroundColor: "pink" }}></div> */}
 
-      </StyleEditorBlock>
+      </TextEditorBlock>
     </div>
   );
 };

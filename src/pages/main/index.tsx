@@ -22,24 +22,43 @@ const Page: React.FC = (): React.ReactElement => {
         <meta name="description" content="react-web-editor is a simple WYSIWYG editor. You can edit component easy just using mouse click" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header>
-        <Link href="/demo" passHref>
-          <MenuName>
-            Demo
+      <PageWrapper>
+        <Header>
+          <Link href="/demo" passHref>
+            <MenuName>
+              DEMO
+            </MenuName>
+          </Link>
+          <MenuName target="_blank" href="https://github.com/CHEWCHEWW/react-web-editor/" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
           </MenuName>
-        </Link>
-        <MenuName target="_blank" href="https://github.com/CHEWCHEWW/react-web-editor/" rel="noreferrer">
-          <FontAwesomeIcon icon={faGithub} />
-        </MenuName>
-      </Header>
-      <Title>React Web Editor</Title>
-      <CodeEditor code={STYLE_EDITOR_BLOCK} />
+        </Header>
+        <Title>REACT WEB EDITOR</Title>
+        <Description>A Simple WYSIWYG editor for react user</Description>
+        <CodeEditor code={STYLE_EDITOR_BLOCK} />
+      </PageWrapper>
     </>
   );
 };
 
+const PageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", serif;
+`;
+
 const Title = styled.h1`
-  font-family: "Roboto Slab", serif;
+  margin: 3rem 0 0 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+`;
+
+const Description = styled.h1`
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
 `;
 
 const MenuName = styled.a`
