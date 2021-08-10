@@ -34,7 +34,6 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
 const CodeEditorWrapper = styled.div`
   width: 43%;
   font-size: 0.9rem;
-  overflow: hidden;
   border-radius: 0.5rem;
 
   .CodeMirror-scroll {

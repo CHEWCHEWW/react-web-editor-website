@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
 
+import { STYLE_EDITOR_BLOCK } from "../../constants/codeExample";
 import CodeEditor from ".";
 
 export default {
@@ -8,15 +9,26 @@ export default {
   component: CodeEditor,
   decorators: [
     (Story) => (
-      <Story />
+      <div style={{ fontSize: "0.9rem", borderRadius: "0.5rem", overflow: "hidden" }}>
+        <Story />
+      </div>
     )
   ],
 } as ComponentMeta<typeof CodeEditor>;
 
 const Template: ComponentStory<typeof CodeEditor> = (args) => <CodeEditor { ...args } />;
 
-export const Default = Template.bind({});
+export const Short = Template.bind({});
 
-Default.args = {
-  code: "function happy() {",
+Short.args = {
+  code: `function happy() {
+    console.log(30);
+  }
+  `,
+};
+
+export const Long = Template.bind({});
+
+Long.args = {
+  code: STYLE_EDITOR_BLOCK,
 };
