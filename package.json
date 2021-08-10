@@ -1,5 +1,5 @@
 {
-  "name": "web-builder",
+  "name": "make-your-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,10 +11,12 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.11",
+    "codemirror": "^5.62.2",
     "next": "11.0.1",
     "react": "17.0.2",
+    "react-codemirror2": "^7.2.1",
     "react-dom": "17.0.2",
+    "react-web-editor": "^1.0.7",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
@@ -23,7 +25,10 @@
     "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-links": "^6.3.4",
     "@storybook/react": "^6.3.4",
+    "@types/codemirror": "^5.60.2",
+    "@types/next": "^9.0.0",
     "@types/react": "17.0.14",
+    "@types/styled-components": "^5.1.11",
     "babel-loader": "^8.2.2",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
