@@ -20,8 +20,6 @@ export const Default = Template.bind({});
 Default.args = {
   width: 300,
   height: 300,
-  top: 0,
-  left: 0,
   backgroundColor: "pink",
   unit: "px",
 };
