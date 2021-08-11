@@ -4,8 +4,6 @@ import styled from "styled-components";
 interface EditorCardProps {
   width: number
   height: number
-  top: number
-  left: number
   backgroundColor: string
   unit: string
 }
@@ -13,8 +11,6 @@ interface EditorCardProps {
 const EditorCard: React.FC<EditorCardProps> = ({
   width,
   height,
-  top,
-  left,
   backgroundColor,
   children,
   unit,
@@ -24,12 +20,11 @@ const EditorCard: React.FC<EditorCardProps> = ({
       <Board
         width={width}
         height={height}
-        top={top}
-        left={left}
         backgroundColor={backgroundColor}
         unit={unit}
-      />
-      {children}
+      >
+        {children}
+      </Board>
     </>
   );
 };
@@ -37,9 +32,8 @@ const EditorCard: React.FC<EditorCardProps> = ({
 const Board = styled.div<EditorCardProps>`
   width: ${({ width, unit }) => `${width}${unit}`};
   height: ${({ height, unit }) => `${height}${unit}`};
-  top: ${({ top, unit }) => `${top}${unit}`};
-  left: ${({ left, unit }) => `${left}${unit}`};
   background-color: ${({ backgroundColor }) => backgroundColor};
+  position: absolute;
 `;
 
 export default EditorCard;
