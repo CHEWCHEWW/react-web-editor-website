@@ -12,7 +12,7 @@ import MiniCard from "../MiniCard";
 
 const MiniCardBoard: React.FC = ({ children }): React.ReactElement => {
   return (
-    <CardBoardWRow>
+    <MiniCardSection>
       <MiniCard 
         title={"Easy To Use"} 
         description={"By Importing Single Block, you can handle all features just using mouse."}
@@ -29,22 +29,23 @@ const MiniCardBoard: React.FC = ({ children }): React.ReactElement => {
       </MiniCard>
       <MiniCard 
         title={"Simple And Light"} 
-        description={"Bye All handlers. You need just simple props to achieve your goals."}
+        description={"Bye Bye All handlers. You need just simple props to achieve your goals."}
       >
         <Image src={simpleUse} alt="simple use" />
         {/* <FontAwesomeIcon icon={faFeatherAlt} /> */}
       </MiniCard>
       {children}
-    </CardBoardWRow>
+    </MiniCardSection>
   );
 };
 
-const CardBoardWRow = styled.div`
+const MiniCardSection = styled.section`
   display: flex;
-  width: 50rem;
-  height: 17rem;
-  margin: 1rem auto;
+  width: 55rem;
+  min-width: 30rem;
+  min-height: 20rem;
   align-items: center;
+  background-color: #FEEDEB;
   justify-content: space-evenly;
 `;
 
