@@ -40,9 +40,8 @@ const Page: React.FC = (): React.ReactElement => {
 const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100vw;
-  height: 100vh;
+  align-items: center;
   font-family: "Poppins", serif;
 `;
 

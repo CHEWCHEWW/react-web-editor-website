@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    overflow-y: auto;
 
     @media (max-width: 575.98px) {
       font-size: 10px;
@@ -24,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     @media (min-width: 1200px) and (max-width: 1499.98px) {
       font-size: 14px;
     }
-    
+
     @media (min-width: 1500px) {
       font-size: 16px;
     }
