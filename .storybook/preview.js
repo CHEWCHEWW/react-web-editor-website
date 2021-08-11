@@ -14,6 +14,13 @@ export const decorators = [
   ),
 ];
 
+import * as NextImage from "next/image";
+
+Object.defineProperty(NextImage, "default", {
+  configurable: true,
+  value: (props) => <img {...props} style={{ width: "100%", height: "100%" }}/>,
+});
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
