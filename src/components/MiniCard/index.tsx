@@ -13,9 +13,11 @@ const MiniCard: React.FC<MiniCardProps> = ({
 }): React.ReactElement => {
   return (
     <CardBord>
-      {children}
-      <h3>{title}</h3>
-      <h4>{description}</h4>
+      <Icon>
+        {children}
+      </Icon>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
     </CardBord>
   );
 };
@@ -23,9 +25,32 @@ const MiniCard: React.FC<MiniCardProps> = ({
 const CardBord = styled.div`
   display: flex;
   flex-direction: column;
-  width: 5rem;
-  height: 8rem;
+  align-items: center;
+  /* justify-content: center; */
+  width: 22%;
+  height: 90%;
+  padding: 1rem;
+  background-color: #acabab;
+  border-radius: 0.25rem;
+`;
 
+const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 60%;
+  font-size: 3.5rem;
+`;
+
+const Title = styled.h3`
+  margin: 0;
+  padding: 0;
+`;
+
+const Description = styled.h4`
+  margin: 0;
+  padding: 0;
 `;
 
 export default MiniCard;

@@ -9,6 +9,7 @@ import styled from "styled-components";
 
 import EditorCard from "../../components/EditorCard";
 import Header from "../../components/Header";
+import MiniCardBoard from "../../components/MiniCardBoard";
 import { STYLE_EDITOR_BLOCK } from "../../constants/codeExample";
 
 const CodeEditor = dynamic(
@@ -37,6 +38,8 @@ const Page: React.FC = (): React.ReactElement => {
         </Header>
         <Title>REACT WEB EDITOR</Title>
         <Description>A Simple WYSIWYG editor for react user</Description>
+        <MiniCardBoard />
+        
         <CardWrapper>
           <EditorCard width={55} height={30} backgroundColor={"#FEEDEB"} unit={"rem"}>
             <StyleEditorBlock 
