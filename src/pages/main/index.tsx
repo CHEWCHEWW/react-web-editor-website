@@ -1,21 +1,13 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
-import { StyleEditorBlock ,TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
-import EditorCard from "../../components/EditorCard";
 import Header from "../../components/Header";
-import MiniCardBoard from "../../components/MiniCardBoard";
-import { STYLE_EDITOR_BLOCK } from "../../constants/codeExample";
-
-const CodeEditor = dynamic(
-  () => import("../../components/CodeEditor"),
-  { ssr: false }
-);
+import StyleEditorSection from "../../components/StyleEditorSection";
+import SummerizeCardSection from "../../components/SummerizeCardSection";
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -38,30 +30,8 @@ const Page: React.FC = (): React.ReactElement => {
         </Header>
         <Title>REACT WEB EDITOR</Title>
         <Description>A Simple WYSIWYG editor for react user</Description>
-        <MiniCardBoard />
-        
-        <CardWrapper>
-          <EditorCard width={55} height={30} backgroundColor={"#FEEDEB"} unit={"rem"}>
-            <StyleEditorBlock 
-              width={10} 
-              height={10} 
-              left={20} 
-              top={10} 
-              parentStyle={{ width: 55, height: 30, top: 0.1, left: 0.1 }} 
-              unit={"rem"}
-              initialColor={"#00ff0000"}
-            />
-            <TextEditorBlock 
-              width={10} 
-              height={10} 
-              left={10} 
-              top={10} 
-              parentStyle={{ width: 55, height: 30, top: 0.1, left: 0.1 }} 
-              unit={"rem"} 
-            />
-          </EditorCard>
-        </CardWrapper>
-        {/* <CodeEditor code={STYLE_EDITOR_BLOCK} /> */}
+        <SummerizeCardSection />
+        <StyleEditorSection />
       </PageWrapper>
     </>
   );
@@ -94,11 +64,6 @@ const MenuName = styled.a`
   height: 100%;
   color: #CDCDC9;
   text-decoration: none;
-`;
-
-const CardWrapper = styled.div`
-  display: flex;
-  justify-content: center;
 `;
 
 export default Page;
