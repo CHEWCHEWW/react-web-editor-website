@@ -1,5 +1,3 @@
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dynamic from "next/dynamic";
 import React from "react";
 import { StyleEditorBlock } from "react-web-editor";
@@ -21,12 +19,6 @@ const CodeEditor = dynamic(
 const StyleEditorSection: React.FC = (): React.ReactElement => {
   return (
     <EditorSection>
-      <Title>You can drag and resize your own component!</Title>
-      <Description>you can handle WYSIWYG feature easily only using mouse event</Description>
-      <Message>
-        Try It
-        <FontAwesomeIcon className="arrow" icon={faArrowDown} />
-      </Message>
       <EditorSectionContent>
         <EditorCardWrapper>
           <EditorCard unit={"rem"} width={30} height={22} backgroundColor={"#f8f3ee"}>
@@ -95,54 +87,7 @@ const EditorSection = styled.section`
 const EditorSectionContent = styled.div`
   display: flex;
   height: 95%;
-  margin-top: 2rem;
-`;
-
-const Title = styled.h2`
-  display: flex;
-  justify-content: center;
-  font-size: 35px;
-  font-weight: 600;
-  margin-top: 0;
-`;
-
-const Description = styled.h3`
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  margin-top: 0;
-`;
-
-const Message = styled.div`
-  display: flex;
-  width: 45%;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 1rem 2rem;
-  height: 2.2rem;
-  font-size: 45px;
-  font-weight: 600;
-  z-index: 1;
-
-  .arrow {
-    font-size: 35px;
-    margin-left: 0.5rem;
-    animation: bounce 2s infinite;
-
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-
-      40% {
-        transform: translateY(-20px);
-      }
-
-      60% {
-        transform: translateY(-10px);
-      }
-    }
-  }
+  margin-top: 1.5rem;
 `;
 
 const EditorCardWrapper = styled.div`

@@ -5,9 +5,12 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
+import EditorMessage from "../../components/EditorMessage";
 import Header from "../../components/Header";
+import MainPhrase from "../../components/shared/MainPhrase";
 import StyleEditorSection from "../../components/StyleEditorSection";
 import SummerizeCardSection from "../../components/SummerizeCardSection";
+import TextEditorSection from "../../components/TextEditorSection";
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -31,7 +34,12 @@ const Page: React.FC = (): React.ReactElement => {
         <Title>REACT WEB EDITOR</Title>
         <Description>A Simple WYSIWYG editor for react user</Description>
         <SummerizeCardSection />
+        <MainPhrase>
+          You can handle WYSIWYG feature easily
+        </MainPhrase>
+        <EditorMessage />
         <StyleEditorSection />
+        <TextEditorSection />
       </PageWrapper>
     </>
   );
