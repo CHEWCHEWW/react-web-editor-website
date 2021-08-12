@@ -5,7 +5,7 @@ const MainPhrase = styled.h2`
   justify-content: center;
   font-size: 35px;
   font-weight: 600;
-  margin-top: 0;
+  margin: 0 0 2rem 0;
 `;
 
 export default MainPhrase;

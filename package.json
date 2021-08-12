@@ -11,21 +11,20 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "babel-plugin-styled-components": "^1.13.2",
     "codemirror": "^5.62.2",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-codemirror2": "^7.2.1",
     "react-dom": "17.0.2",
-    "react-web-editor": "^1.2.0",
+    "react-web-editor": "^2.0.0",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@storybook/addon-actions": "^6.3.4",
     "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-links": "^6.3.4",
@@ -35,6 +34,7 @@
     "@types/react": "17.0.14",
     "@types/styled-components": "^5.1.11",
     "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.13.2",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
