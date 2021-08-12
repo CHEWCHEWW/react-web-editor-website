@@ -11,11 +11,11 @@ interface MiniCardStyle {
   color?: string
 }
 
-const MiniCard: React.FC<MiniCardProps> = ({ 
-  title, 
+const MiniCard: React.FC<MiniCardProps> = ({
+  title,
   description,
   color,
-  children, 
+  children,
 }): React.ReactElement => {
   return (
     <CardBord>
@@ -34,7 +34,7 @@ const CardBord = styled.div`
   align-items: center;
   width: 25%;
   height: 78%;
-  min-height: 14rem;
+  min-height: 15.3rem;
   padding: 0.5rem;
   background-color: white;
   border-radius: 0.4rem;

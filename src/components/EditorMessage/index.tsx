@@ -3,9 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 
+import MainPhrase from "../shared/MainPhrase";
+
 const EditorMessage: React.FC = (): React.ReactElement => {
   return (
     <MesageBoard>
+      <MainPhrase>
+        You can handle WYSIWYG feature easily
+      </MainPhrase>
       <Description>
         You can drag and resize all components.
       </Description>
@@ -15,10 +20,13 @@ const EditorMessage: React.FC = (): React.ReactElement => {
       <Description>
         Text Editor Block is a simple rich text editor.
       </Description>
-      <Message>
+      <Description>
+        If you want to use this feature, Put your cursor to component.
+      </Description>
+      <BounceMessage>
         Try It
         <FontAwesomeIcon className="arrow" icon={faArrowDown} />
-      </Message>
+      </BounceMessage>
     </MesageBoard>
   );
 };
@@ -26,34 +34,26 @@ const EditorMessage: React.FC = (): React.ReactElement => {
 const MesageBoard = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50rem;
-  margin: 1rem 0 2rem 0;
+  width: 70rem;
+  margin: 6rem 0 2rem 0;
 `;
-
-// const Title = styled.h2`
-//   display: flex;
-//   justify-content: center;
-//   font-size: 35px;
-//   font-weight: 600;
-//   margin-top: 0;
-// `;
 
 const Description = styled.h3`
   display: flex;
   justify-content: center;
   font-size: 20px;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   text-align: center;
 `;
 
-const Message = styled.div`
+const BounceMessage = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 1rem 0;
+  margin: 3rem 0 1rem 0;
   height: 2.2rem;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 600;
   z-index: 1;
   animation: bounce 2s infinite;

@@ -10,12 +10,12 @@ interface CodeEditorProps {
   code: string
 }
 
-const CodeEditor: React.FC<CodeEditorProps> = ({ 
-  code, 
+const CodeEditor: React.FC<CodeEditorProps> = ({
+  code,
 }): React.ReactElement => {
   return (
     <CodeEditorWrapper>
-      <CodeMirror 
+      <CodeMirror
         value={code}
         options={{
           lineWrapping: true,
@@ -33,14 +33,16 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
 
 const CodeEditorWrapper = styled.div`
   font-size: 0.9rem;
+  font-weight: 200 !important;
   border-radius: 2rem;
-  
+
   .CodeMirror {
     border-radius: 0.5rem;
     /* position: absolute; */
   }
 
   .CodeMirror-scroll {
+    width: auto;
     height: auto;
     overflow: hidden;
   }
