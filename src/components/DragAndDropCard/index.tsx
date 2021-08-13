@@ -51,7 +51,7 @@ const DragAndDropCard: React.FC = (): React.ReactElement => {
 const Section = styled.section`
   display: flex;
   width: 80rem;
-  height: 38rem;
+  height: 40rem;
   margin: 5rem 0 0 0;
   flex-direction: column;
   align-items: center;
@@ -62,7 +62,7 @@ const DragAndDropTableWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 14.3rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   justify-content: center;
   background-color: #ebebe7;
 `;
@@ -74,7 +74,7 @@ const ImageWrapper = styled.div`
 
 const CodeEditorWrapper = styled.div`
   width: 55%;
-  margin : 3rem 0 0 0;
+  margin : 3.5rem 0 0 0;
 `;
 
 export default DragAndDropCard;

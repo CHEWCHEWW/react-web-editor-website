@@ -9,6 +9,7 @@ import DragAndDropCard from "../components/DragAndDropCard";
 import DragAndDropMessage from "../components/DragAndDropMessage";
 import EditorMessage from "../components/EditorMessage";
 import Header from "../components/Header";
+import HookSection from "../components/HookSection";
 import StyleEditorSection from "../components/StyleEditorSection";
 import SummerizeCardSection from "../components/SummerizeCardSection";
 import TextEditorSection from "../components/TextEditorSection";
@@ -40,6 +41,7 @@ const Page: React.FC = (): React.ReactElement => {
         <TextEditorSection />
         <DragAndDropMessage />
         <DragAndDropCard />
+        <HookSection />
       </PageWrapper>
     </>
   );

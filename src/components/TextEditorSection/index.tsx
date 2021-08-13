@@ -84,7 +84,7 @@ const EditorSection = styled.section`
 
 const CodeEditorWrapper = styled.div`
   width: 47%;
-  height: 23rem;
+  height: 24rem;
   border-radius: 0.5rem;
   margin: 0 0 0 2rem;
   overflow: hidden;
