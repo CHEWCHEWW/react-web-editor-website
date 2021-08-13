@@ -15,7 +15,7 @@ const EditorMessage: React.FC = (): React.ReactElement => {
         You can drag and resize all components.
       </Description>
       <Description>
-        StyleEditorBlock is a block which handle not only color, but also image.
+        Style Editor Block is a component which handle not only color, but also image.
       </Description>
       <Description>
         Text Editor Block is a simple rich text editor.
@@ -24,7 +24,7 @@ const EditorMessage: React.FC = (): React.ReactElement => {
         If you want to use this feature, Put your cursor to component.
       </Description>
       <BounceMessage>
-        Try It
+        Try It Now!
         <FontAwesomeIcon className="arrow" icon={faArrowDown} />
       </BounceMessage>
     </MesageBoard>
