@@ -7,7 +7,7 @@ import Description from "../shared/Description";
 import MainPhrase from "../shared/MainPhrase";
 import MessageBoard from "../shared/MessageBoard";
 
-const EditorMessage: React.FC = (): React.ReactElement => {
+const EditorSectionPhrase: React.FC = (): React.ReactElement => {
   return (
     <MessageBoard>
       <MainPhrase>
@@ -33,4 +33,4 @@ const EditorMessage: React.FC = (): React.ReactElement => {
   );
 };
 
-export default EditorMessage;
+export default EditorSectionPhrase;
