@@ -29,7 +29,7 @@ const HookSection: React.FC = (): React.ReactElement => {
 const CodeSection = styled.section`
   display: flex;
   width: 64rem;
-  height: 40rem;
+  height: 30rem;
   margin: 14rem 0 0 0;
 `;
 
@@ -37,7 +37,7 @@ const MessageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 1rem 3rem 0 0;
+  margin: 2rem 3rem 0 0;
 `;
 
 const CodeEditorWrapper = styled.div`
