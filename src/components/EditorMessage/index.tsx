@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 
+import Description from "../shared/Description";
 import MainPhrase from "../shared/MainPhrase";
+import MessageBoard from "../shared/MessageBoard";
 
 const EditorMessage: React.FC = (): React.ReactElement => {
   return (
-    <MesageBoard>
+    <MessageBoard>
       <MainPhrase>
         You can handle WYSIWYG feature easily
       </MainPhrase>
@@ -27,24 +29,9 @@ const EditorMessage: React.FC = (): React.ReactElement => {
         Try It Now!
         <FontAwesomeIcon className="arrow" icon={faArrowDown} />
       </BounceMessage>
-    </MesageBoard>
+    </MessageBoard>
   );
 };
-
-const MesageBoard = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 70rem;
-  margin: 6rem 0 2rem 0;
-`;
-
-const Description = styled.h3`
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  margin: 0.5rem auto;
-  text-align: center;
-`;
 
 const BounceMessage = styled.div`
   display: flex;
