@@ -9,8 +9,7 @@ import mosque from "../../../public/mosque.jpg";
 import sky from "../../../public/sky.jpg";
 import snow from "../../../public/snow.jpg";
 import { DRAG_AND_DROP_BLOCK } from "../../constants/codeExample";
-import Description from "../shared/Description";
-import MainPhrase from "../shared/MainPhrase";
+
 
 const CodeEditor = dynamic(
   () => import("../../components/CodeEditor"),
@@ -20,9 +19,6 @@ const CodeEditor = dynamic(
 const DragAndDropCard: React.FC = (): React.ReactElement => {
   return (
     <Section>
-      <MainPhrase>Simple Drag And Drop</MainPhrase>
-      <Description>If you want to use Drag and Drop feature,</Description>
-      <Description>The only you have to do is to put your code to Drag and drop component`s children.</Description>
       <DragAndDropTableWrapper>
         <DragAndDropTable isVertical={false}>
           <ImageWrapper>
@@ -49,8 +45,8 @@ const DragAndDropCard: React.FC = (): React.ReactElement => {
 const Section = styled.section`
   display: flex;
   width: 75rem;
-  height: 50rem;
-  margin: 7rem 0 0 0;
+  height: 30rem;
+  margin: 4rem 0 0 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -60,7 +56,7 @@ const DragAndDropTableWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 26%;
-  margin: 5rem 0 0 3rem;
+  margin: 1rem 0 5rem 3rem;
   justify-content: center;
   background-color: #F0F0ED;
 `;
@@ -72,7 +68,7 @@ const ImageWrapper = styled.div`
 
 const CodeEditorWrapper = styled.div`
   width: 55%;
-  margin : 4rem 0 0 0;
+  margin : 5rem 0 0 0;
 `;
 
 export default DragAndDropCard;

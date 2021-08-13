@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const MesageBoard = styled.div`
+const MessageBoard = styled.div`
   display: flex;
   flex-direction: column;
   width: 70rem;
-  margin: 6rem 0 2rem 0;
+  margin: 6rem 0 1rem 0;
 `;
 
-export default MesageBoard;
+export default MessageBoard;
