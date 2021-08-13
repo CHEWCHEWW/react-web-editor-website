@@ -26,3 +26,15 @@ export const TEXT_EDITOR_BLOCK = `import { TextEditorBlock } from "react-web-edi
   );
 `;
 
+export const DRAG_AND_DROP_BLOCK = `import { DragAndDropTable } from "react-web-editor"
+  ...
+  return (
+    <DragAndDropTable isVertical={false}>
+      <img src={cat} alt="cat" />
+      <img src={mosque} alt="mosque" />
+      <img src={sky} alt="sky" />
+      <img src={snow} alt="snow" />
+    </DragAndDropTable>
+  );
+`;
+

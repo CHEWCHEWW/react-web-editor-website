@@ -37,14 +37,11 @@ const CodeEditorWrapper = styled.div`
   border-radius: 2rem;
 
   .CodeMirror {
-    border-radius: 0.5rem;
-    /* position: absolute; */
-  }
-
-  .CodeMirror-scroll {
     width: auto;
     height: auto;
     overflow: hidden;
+    border-radius: 0.5rem;
+    /* position: absolute; */
   }
 `;
 
