@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
+import DragAndDropCard from "../components/DragAndDropCard";
 import EditorMessage from "../components/EditorMessage";
 import Header from "../components/Header";
 import StyleEditorSection from "../components/StyleEditorSection";
@@ -36,6 +37,7 @@ const Page: React.FC = (): React.ReactElement => {
         <EditorMessage />
         <StyleEditorSection />
         <TextEditorSection />
+        <DragAndDropCard />
       </PageWrapper>
     </>
   );

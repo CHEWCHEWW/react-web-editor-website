@@ -105,6 +105,7 @@ const Circle = styled.div<CircleProps>`
   height: 100%;
   border-radius: 70px;
   background-color: ${({ color }) => color};
+  position: absolute;
 `;
 
 export default StyleEditorSection;

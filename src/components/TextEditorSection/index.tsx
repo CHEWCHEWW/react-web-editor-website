@@ -25,7 +25,7 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
       </CodeEditorWrapper>
       <EditorCardWrapper>
         <EditorCard
-          width={35}
+          width={33}
           height={30}
           unit={"rem"}
           backgroundColor={"#f3f3ea"}
@@ -36,7 +36,7 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
             top={3}
             left={3}
             unit={"rem"}
-            parentStyle={{ width: 35, height: 30 }}
+            parentStyle={{ width: 33, height: 30 }}
             initialText={"MY Phrase"}
             initialFontSize={0.51}
             initialFontColor={"#232665"}
@@ -49,7 +49,7 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
             top={9}
             left={3}
             unit={"rem"}
-            parentStyle={{ width: 35, height: 30 }}
+            parentStyle={{ width: 33, height: 30 }}
             initialText={TEXT_EDITOR_EXAMPLE_MESSAGE}
             initialFontSize={0.27}
             initialFontColor={"#232665"}
@@ -58,10 +58,10 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
           <TextEditorBlock
             width={15}
             height={4}
-            top={2}
+            top={24.5}
             left={12.5}
             unit={"rem"}
-            parentStyle={{ width: 35, height: 30 }}
+            parentStyle={{ width: 33, height: 30 }}
             initialText={TEXT_EDITOR_EXAMPLE_COMMENT}
             initialFontSize={0.22}
             initialFontColor={"#232665"}
@@ -77,7 +77,7 @@ const EditorSection = styled.section`
   display: flex;
   width: 70rem;
   height: 30rem;
-  margin: 5rem 0 0 0;
+  margin: 2rem 0 0 0;
   color: #232665;
   font-weight: bold;
 `;
@@ -86,6 +86,7 @@ const CodeEditorWrapper = styled.div`
   width: 47%;
   height: 23rem;
   border-radius: 0.5rem;
+  margin: 0 0 0 2rem;
   overflow: hidden;
 `;
 
