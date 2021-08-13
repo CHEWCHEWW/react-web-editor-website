@@ -25,7 +25,7 @@ const EditorMessage: React.FC = (): React.ReactElement => {
       <Description>
         If you want to use this feature, Put your cursor to component.
       </Description>
-      <BounceMessage>
+      <BounceMessage animation="bounceDown">
         Try It Now!
         <FontAwesomeIcon className="arrow" icon={faArrowDown} />
       </BounceMessage>

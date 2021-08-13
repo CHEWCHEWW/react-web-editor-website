@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const BounceMessage = styled.div`
+interface BounceMessageStyle {
+  animation: string
+}
+
+const BounceMessage = styled.div<BounceMessageStyle>`
   display: flex;
   width: 100%;
   align-items: center;
@@ -10,9 +14,23 @@ const BounceMessage = styled.div`
   font-size: 35px;
   font-weight: 600;
   z-index: 1;
-  animation: bounce 2s infinite;
+  animation: ${({ animation }) => animation} 2s infinite;
 
-  @keyframes bounce {
+  @keyframes bounceDown {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-20px);
+    }
+
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes bounceUp {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
     }
