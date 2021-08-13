@@ -1,3 +1,5 @@
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
@@ -9,7 +11,7 @@ import mosque from "../../../public/mosque.jpg";
 import sky from "../../../public/sky.jpg";
 import snow from "../../../public/snow.jpg";
 import { DRAG_AND_DROP_BLOCK } from "../../constants/codeExample";
-
+import BounceMessage from "../shared/BounceMessage";
 
 const CodeEditor = dynamic(
   () => import("../../components/CodeEditor"),
@@ -35,6 +37,10 @@ const DragAndDropCard: React.FC = (): React.ReactElement => {
           </ImageWrapper>
         </DragAndDropTable>
       </DragAndDropTableWrapper>
+      <BounceMessage animation="bounceUp">
+        Change Order
+        <FontAwesomeIcon className={"arrow"} icon={faArrowUp} />
+      </BounceMessage>
       <CodeEditorWrapper>
         <CodeEditor code={DRAG_AND_DROP_BLOCK} />
       </CodeEditorWrapper>
@@ -44,9 +50,9 @@ const DragAndDropCard: React.FC = (): React.ReactElement => {
 
 const Section = styled.section`
   display: flex;
-  width: 75rem;
-  height: 30rem;
-  margin: 4rem 0 0 0;
+  width: 80rem;
+  height: 38rem;
+  margin: 5rem 0 0 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -55,20 +61,20 @@ const Section = styled.section`
 const DragAndDropTableWrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 26%;
-  margin: 1rem 0 5rem 3rem;
+  height: 14.3rem;
+  margin: 1rem 0 2rem 0;
   justify-content: center;
-  background-color: #F0F0ED;
+  background-color: #ebebe7;
 `;
 
 const ImageWrapper = styled.div`
-  height: 100%;
+  height: 90%;
   margin: 0.5rem 0.3rem;
 `;
 
 const CodeEditorWrapper = styled.div`
   width: 55%;
-  margin : 5rem 0 0 0;
+  margin : 3rem 0 0 0;
 `;
 
 export default DragAndDropCard;
