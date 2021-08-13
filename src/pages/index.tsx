@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 import DragAndDropCard from "../components/DragAndDropCard";
 import DragAndDropMessage from "../components/DragAndDropMessage";
-import EditorMessage from "../components/EditorMessage";
+import EditorSectionPhrase from "../components/EditorSectionPhrase";
 import Header from "../components/Header";
 import HookSection from "../components/HookSection";
 import StyleEditorSection from "../components/StyleEditorSection";
@@ -36,7 +36,7 @@ const Page: React.FC = (): React.ReactElement => {
         <Title>REACT WEB EDITOR</Title>
         <Description>A Simple WYSIWYG editor for react user</Description>
         <SummerizeCardSection />
-        <EditorMessage />
+        <EditorSectionPhrase />
         <StyleEditorSection />
         <TextEditorSection />
         <DragAndDropMessage />

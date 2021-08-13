@@ -1,10 +1,9 @@
 import dynamic from "next/dynamic";
 import React from "react";
-import { StyleEditorBlock } from "react-web-editor";
+import { EditableBoard, StyleEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import { STYLE_EDITOR_BLOCK } from "../../constants/codeExample";
-import EditorCard from "../EditorCard";
 
 interface CircleProps {
   color: string
@@ -19,7 +18,7 @@ const StyleEditorSection: React.FC = (): React.ReactElement => {
   return (
     <EditorSection>
       <EditorCardWrapper>
-        <EditorCard
+        <EditableBoard
           unit={"rem"}
           width={30}
           height={22}
@@ -69,7 +68,7 @@ const StyleEditorSection: React.FC = (): React.ReactElement => {
           >
             <Circle color={"#b488dd"} />
           </StyleEditorBlock>
-        </EditorCard>
+        </EditableBoard>
       </EditorCardWrapper>
       <CodeEditorWrapper>
         <CodeEditor code={STYLE_EDITOR_BLOCK} />

@@ -10,36 +10,36 @@ import react from "../../../public/react.png";
 import simpleUse from "../../../public/simpleUse.png";
 import MiniCard from "../MiniCard";
 
-const MiniCardBoard: React.FC = ({ children }): React.ReactElement => {
+const SurmmerizeCardSection: React.FC = ({ children }): React.ReactElement => {
   return (
-    <MiniCardSection>
-      <MiniCard 
-        title={"Easy To Use"} 
+    <CardSection>
+      <MiniCard
+        title={"Easy To Use"}
         description={"By Importing Single Block, you can handle all features just using mouse."}
       >
         <Image src={easyToUse} alt="easy to use" />
         {/* <FontAwesomeIcon icon={faUserEdit} /> */}
       </MiniCard>
-      <MiniCard 
-        title={"Hooks Friendly"} 
+      <MiniCard
+        title={"Hooks Friendly"}
         description={"You can use custom hook for single feature."}
       >
         <Image src={react} alt="react" />
         {/* <FontAwesomeIcon icon={faReact} /> */}
       </MiniCard>
-      <MiniCard 
-        title={"Simple And Light"} 
+      <MiniCard
+        title={"Simple And Light"}
         description={"Bye Bye All handlers. You need just simple props to achieve your goals."}
       >
         <Image src={simpleUse} alt="simple use" />
         {/* <FontAwesomeIcon icon={faFeatherAlt} /> */}
       </MiniCard>
       {children}
-    </MiniCardSection>
+    </CardSection>
   );
 };
 
-const MiniCardSection = styled.section`
+const CardSection = styled.section`
   display: flex;
   width: 55rem;
   min-width: 30rem;
@@ -49,4 +49,4 @@ const MiniCardSection = styled.section`
   justify-content: space-evenly;
 `;
 
-export default MiniCardBoard;
+export default SurmmerizeCardSection;

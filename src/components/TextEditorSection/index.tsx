@@ -1,11 +1,10 @@
 import dynamic from "next/dynamic";
 import React from "react";
-import { TextEditorBlock } from "react-web-editor";
+import { EditableBoard, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import { TEXT_EDITOR_BLOCK } from "../../constants/codeExample";
 import { TEXT_EDITOR_EXAMPLE_COMMENT, TEXT_EDITOR_EXAMPLE_MESSAGE } from "../../constants/text";
-import EditorCard from "../EditorCard";
 
 const CodeEditor = dynamic(
   () => import("../../components/CodeEditor"),
@@ -24,7 +23,7 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
         <CodeEditor code={TEXT_EDITOR_BLOCK} />
       </CodeEditorWrapper>
       <EditorCardWrapper>
-        <EditorCard
+        <EditableBoard
           width={33}
           height={30}
           unit={"rem"}
@@ -67,7 +66,7 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
             initialFontColor={"#232665"}
             initialFontName={"andada-pro"}
           />
-        </EditorCard>
+        </EditableBoard>
       </EditorCardWrapper>
     </EditorSection>
   );
