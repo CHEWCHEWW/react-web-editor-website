@@ -2,12 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
-interface StaticImageData {
-  src: string;
-  height: number;
-  width: number;
-  blurDataURL?: string;
-}
+import { StaticImageData } from "../../types/style";
 
 interface ImageProps {
   alt: string;

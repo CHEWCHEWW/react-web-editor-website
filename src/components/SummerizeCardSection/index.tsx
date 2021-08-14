@@ -1,7 +1,3 @@
-// import { faReact } from "@fortawesome/free-brands-svg-icons";
-// import { faFeatherAlt, faUserEdit } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -10,31 +6,26 @@ import react from "../../../public/react.png";
 import simpleUse from "../../../public/simpleUse.png";
 import MiniCard from "../MiniCard";
 
-const SurmmerizeCardSection: React.FC = ({ children }): React.ReactElement => {
+const SurmmerizeCardSection: React.FC = (): React.ReactElement => {
   return (
     <CardSection>
       <MiniCard
         title={"Easy To Use"}
         description={"By Importing Single Block, you can handle all features just using mouse."}
-      >
-        <Image src={easyToUse} alt="easy to use" />
-        {/* <FontAwesomeIcon icon={faUserEdit} /> */}
-      </MiniCard>
+        src={easyToUse}
+        alt="easy to use"
+      />
       <MiniCard
         title={"Hooks Friendly"}
         description={"You can use custom hook for single feature."}
-      >
-        <Image src={react} alt="react" />
-        {/* <FontAwesomeIcon icon={faReact} /> */}
-      </MiniCard>
+        src={react}
+        alt="react"
+      />
       <MiniCard
         title={"Simple And Light"}
         description={"Bye Bye All handlers. You need just simple props to achieve your goals."}
-      >
-        <Image src={simpleUse} alt="simple use" />
-        {/* <FontAwesomeIcon icon={faFeatherAlt} /> */}
-      </MiniCard>
-      {children}
+        src={simpleUse} alt="simple use"
+      />
     </CardSection>
   );
 };
