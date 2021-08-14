@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 interface MiniCardProps {
-  title: string
-  description: string
-  color?: string
+  title: string;
+  description: string;
+  color?: string;
 }
 
 interface MiniCardStyle {
-  color?: string
+  color?: string;
 }
 
 const MiniCard: React.FC<MiniCardProps> = ({
