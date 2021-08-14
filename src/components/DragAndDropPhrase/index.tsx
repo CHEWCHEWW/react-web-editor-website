@@ -4,7 +4,7 @@ import Description from "../shared/Description";
 import MainPhrase from "../shared/MainPhrase";
 import MessageBoard from "../shared/MessageBoard";
 
-const DragAndDropMessage: React.FC = (): React.ReactElement => {
+const DragAndDropPhrase: React.FC = (): React.ReactElement => {
   return (
     <MessageBoard>
       <MainPhrase>Simple Drag And Drop</MainPhrase>
@@ -14,4 +14,4 @@ const DragAndDropMessage: React.FC = (): React.ReactElement => {
   );
 };
 
-export default DragAndDropMessage;
+export default DragAndDropPhrase;

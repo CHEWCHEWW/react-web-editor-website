@@ -5,9 +5,7 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
-import DragAndDropCard from "../components/DragAndDropCard";
-import DragAndDropMessage from "../components/DragAndDropMessage";
-import EditorSectionPhrase from "../components/EditorSectionPhrase";
+import DragAndDropSection from "../components/DragAndDropSection";
 import Header from "../components/Header";
 import HookSection from "../components/HookSection";
 import MultiOptionSection from "../components/MultiOptionSection";
@@ -37,11 +35,9 @@ const Page: React.FC = (): React.ReactElement => {
         <Title>REACT WEB EDITOR</Title>
         <Description>A Simple WYSIWYG editor for react user</Description>
         <SummerizeCardSection />
-        <EditorSectionPhrase />
         <StyleEditorSection />
         <TextEditorSection />
-        <DragAndDropMessage />
-        <DragAndDropCard />
+        <DragAndDropSection />
         <HookSection />
         <MultiOptionSection />
       </PageWrapper>
