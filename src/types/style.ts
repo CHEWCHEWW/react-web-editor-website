@@ -17,3 +17,12 @@ export interface StaticImageData {
   width: number;
   blurDataURL?: string;
 }
+
+export interface TextEditableBoardProps extends CircleStyleEditorBlockProps {
+  backgroundColor: string;
+  initialText?: string;
+  initialFontSize?: number;
+  parentStyle: ComponentSize;
+  initialFontName?: string;
+  initialFontStyle?: string;
+}
