@@ -1,8 +1,7 @@
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-import BounceMessage from "../shared/BounceMessage";
+import BounceArrowMessage from "../BounceArrowMessage";
 import Description from "../shared/Description";
 import MainPhrase from "../shared/MainPhrase";
 import MessageBoard from "../shared/MessageBoard";
@@ -25,10 +24,11 @@ const EditorSectionPhrase: React.FC = (): React.ReactElement => {
       <Description>
         If you want to use this feature, Put your cursor to component.
       </Description>
-      <BounceMessage animation="bounceDown">
-        Try It Now!
-        <FontAwesomeIcon className="arrow" icon={faArrowDown} />
-      </BounceMessage>
+      <BounceArrowMessage
+        animation={"bounceDown"}
+        message={"Try It Now"}
+        icon={faArrowDown}
+      />
     </MessageBoard>
   );
 };
