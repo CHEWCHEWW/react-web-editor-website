@@ -4,10 +4,13 @@ import { EditableBoard, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import colorfulPattern from "../../../public/dot-pattern.png";
+import MultiOptionPhrase from "../MultiOptionPhrase";
+import MainPhrase from "../shared/MainPhrase";
 
 const MultiOptionSection: React.FC = (): React.ReactElement => {
   return (
     <OptionSection>
+      <MultiOptionPhrase />
       <Grid>
         <TextEditorWrapper>
           <EditableBoard
@@ -99,17 +102,21 @@ const MultiOptionSection: React.FC = (): React.ReactElement => {
           </EditableBoard>
         </TextEditorWrapper>
       </Grid>
+      <MainPhrase>
+        Hover your cursor to text, and try yourself.
+      </MainPhrase>
     </OptionSection>
   );
 };
 
 const OptionSection = styled.section`
   display: flex;
-  width: 43rem;
-  height: 43rem;
-  margin: 5rem 0 0 0;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 60rem;
+  height: 60rem;
+  margin: 6rem 0 0 0;
 `;
 
 const Grid = styled.div`
@@ -117,6 +124,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 17rem);
   grid-template-rows: repeat(2, 17rem);
   grid-gap: 2rem;
+  margin: 3rem 0 2rem 0;
 `;
 
 const TextEditorWrapper = styled.div`

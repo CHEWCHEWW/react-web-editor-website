@@ -64,7 +64,7 @@ const DragAndDropTableWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 14.3rem;
-  margin: 1rem 0 1rem 0;
+  margin: 3rem 0;
   justify-content: center;
   background-color: #ebebe7;
 `;
