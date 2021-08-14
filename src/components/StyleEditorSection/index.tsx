@@ -7,7 +7,7 @@ import { STYLE_EDITOR_BLOCK } from "../../constants/codeExample";
 import EditorSectionPhrase from "../EditorSectionPhrase";
 
 interface CircleProps {
-  color: string
+  color: string;
 }
 
 const CodeEditor = dynamic(

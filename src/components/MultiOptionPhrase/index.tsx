@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import Description from "../shared/Description";
 import MainPhrase from "../shared/MainPhrase";

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface BounceMessageStyle {
-  animation: string
+  animation: string;
 }
 
 const BounceMessage = styled.div<BounceMessageStyle>`

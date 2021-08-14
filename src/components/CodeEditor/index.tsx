@@ -7,7 +7,7 @@ import { UnControlled as CodeMirror } from "react-codemirror2";
 import styled from "styled-components";
 
 interface CodeEditorProps {
-  code: string
+  code: string;
 }
 
 const CodeEditor: React.FC<CodeEditorProps> = ({
