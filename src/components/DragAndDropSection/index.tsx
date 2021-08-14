@@ -11,16 +11,18 @@ import mosque from "../../../public/mosque.jpg";
 import sky from "../../../public/sky.jpg";
 import snow from "../../../public/snow.jpg";
 import { DRAG_AND_DROP_BLOCK } from "../../constants/codeExample";
+import DragAndDropPhrase from "../DragAndDropPhrase";
 import BounceMessage from "../shared/BounceMessage";
 
 const CodeEditor = dynamic(
-  () => import("../../components/CodeEditor"),
+  () => import("../CodeEditor"),
   { ssr: false }
 );
 
-const DragAndDropCard: React.FC = (): React.ReactElement => {
+const DragAndDropSection: React.FC = (): React.ReactElement => {
   return (
     <Section>
+      <DragAndDropPhrase />
       <DragAndDropTableWrapper>
         <DragAndDropTable isVertical={false}>
           <ImageWrapper>
@@ -51,8 +53,8 @@ const DragAndDropCard: React.FC = (): React.ReactElement => {
 const Section = styled.section`
   display: flex;
   width: 80rem;
-  height: 40rem;
-  margin: 5rem 0 0 0;
+  height: 53rem;
+  margin: 14rem 0 0 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -77,4 +79,4 @@ const CodeEditorWrapper = styled.div`
   margin : 3.5rem 0 0 0;
 `;
 
-export default DragAndDropCard;
+export default DragAndDropSection;

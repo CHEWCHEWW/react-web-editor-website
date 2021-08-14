@@ -1,18 +1,22 @@
+import Image from "next/image";
 import React from "react";
 import { EditableBoard, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
+
+import colorfulPattern from "../../../public/dot-pattern.png";
 
 const MultiOptionSection: React.FC = (): React.ReactElement => {
   return (
     <OptionSection>
       <Grid>
-        <div>
+        <TextEditorWrapper>
           <EditableBoard
             unit={"rem"}
             width={17}
             height={17}
             backgroundColor={"#f1d0ca"}
           >
+            <Image src={colorfulPattern} alt="pattern" />
             <TextEditorBlock
               unit={"rem"}
               width={14}
@@ -21,14 +25,14 @@ const MultiOptionSection: React.FC = (): React.ReactElement => {
               left={1.8}
               parentStyle={{ width: 17, height: 17 }}
               initialText={"My Font"}
-              initialFontColor={"#ED9390"}
+              initialFontColor={"#FB9898"}
               initialFontSize={0.6}
               initialFontName={"stix-two-text"}
               initialFontStyle={"box-text"}
             />
           </EditableBoard>
-        </div>
-        <div>
+        </TextEditorWrapper>
+        <TextEditorWrapper>
           <EditableBoard
             unit={"rem"}
             width={17}
@@ -49,8 +53,8 @@ const MultiOptionSection: React.FC = (): React.ReactElement => {
               initialFontStyle={"down-side-text"}
             />
           </EditableBoard>
-        </div>
-        <div>
+        </TextEditorWrapper>
+        <TextEditorWrapper>
           <EditableBoard
             unit={"rem"}
             width={17}
@@ -71,13 +75,13 @@ const MultiOptionSection: React.FC = (): React.ReactElement => {
               initialFontStyle={"twin-color-text"}
             />
           </EditableBoard>
-        </div>
-        <div>
+        </TextEditorWrapper>
+        <TextEditorWrapper>
           <EditableBoard
             unit={"rem"}
             width={17}
             height={17}
-            backgroundColor={"#ece1e1"}
+            backgroundColor={"transparent"}
           >
             <TextEditorBlock
               unit={"rem"}
@@ -90,10 +94,10 @@ const MultiOptionSection: React.FC = (): React.ReactElement => {
               initialFontColor={"#7c7b8a"}
               initialFontSize={0.6}
               initialFontName={"roboto"}
-              initialFontStyle={"down-side-text"}
+              initialFontStyle={"out-line-text"}
             />
           </EditableBoard>
-        </div>
+        </TextEditorWrapper>
       </Grid>
     </OptionSection>
   );
@@ -113,6 +117,11 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 17rem);
   grid-template-rows: repeat(2, 17rem);
   grid-gap: 2rem;
+`;
+
+const TextEditorWrapper = styled.div`
+  display: flex;
+  background: linear-gradient(125deg, #adb3dd, #e0ebc4);
 `;
 
 export default MultiOptionSection;
