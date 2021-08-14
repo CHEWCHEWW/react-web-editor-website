@@ -1,8 +1,13 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
 
+import {
+  DEFAULT_UNIT,
+  STYLE_EDITOR_BLOCK_STYLES,
+  STYLE_EDITOR_BOARD_SIZE,
+  STYLE_SECTION_BACKGROUND_COLOR,
+} from "../../constants/ui";
 import StyleEditorCard from ".";
-
 export default {
   title: "Main/StyleEditorCard",
   component: StyleEditorCard,
@@ -15,4 +20,9 @@ export default {
 
 const Template: ComponentStory<typeof StyleEditorCard> = (args) => <StyleEditorCard { ...args } />;
 
-export const Default = Template.bind({});
+export const Default = Template.bind({
+  editorStyles: STYLE_EDITOR_BLOCK_STYLES,
+  unit: DEFAULT_UNIT,
+  editorBoardSize: STYLE_EDITOR_BOARD_SIZE,
+  backgroundColor: STYLE_SECTION_BACKGROUND_COLOR,
+});

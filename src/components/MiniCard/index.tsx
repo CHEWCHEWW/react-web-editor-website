@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+import { StaticImageData } from "../../types/style";
+
 interface MiniCardProps {
   title: string;
   description: string;
   color?: string;
+  alt: string;
+  src: StaticImageData;
 }
 
 interface MiniCardStyle {
