@@ -1,6 +1,7 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
 
+import cat from "../../../public/cat.jpg";
 import CustomImage from ".";
 
 export default {
@@ -8,7 +9,9 @@ export default {
   component: CustomImage,
   decorators: [
     (Story) => (
-      <Story />
+      <div style={{ width: "200px" }}>
+        <Story />
+      </div>
     )
   ],
 } as ComponentMeta<typeof CustomImage>;
@@ -18,4 +21,6 @@ const Template: ComponentStory<typeof CustomImage> = ({ alt, src }) => <CustomIm
 export const Default = Template.bind({});
 
 Default.args = {
+  alt: "cat",
+  src: cat,
 };
