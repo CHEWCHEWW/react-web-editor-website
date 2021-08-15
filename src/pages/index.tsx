@@ -9,6 +9,7 @@ import DragAndDropSection from "../components/DragAndDropSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HookSection from "../components/HookSection";
+import MainTitleSection from "../components/MainTitleSection";
 import StyleEditorSection from "../components/StyleEditorSection";
 import SummerizeCardSection from "../components/SummerizeCardSection";
 import TextEditorSection from "../components/TextEditorSection";
@@ -33,9 +34,7 @@ const Page: React.FC = (): React.ReactElement => {
             <FontAwesomeIcon icon={faGithub} />
           </MenuName>
         </Header>
-        <Title>REACT WEB EDITOR</Title>
-        <Description>A Simple WYSIWYG editor for react user</Description>
-        <Description>It is light and simple library</Description>
+        <MainTitleSection />
         <SummerizeCardSection />
         <StyleEditorSection />
         <TextEditorSection />
@@ -54,17 +53,6 @@ const PageWrapper = styled.div`
   width: 100vw;
   align-items: center;
   font-family: "Poppins", serif;
-`;
-
-const Title = styled.h1`
-  margin: 3rem 0 0 0;
-  font-size: 2.5rem;
-  letter-spacing: 0.3rem;
-`;
-
-const Description = styled.h1`
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
 `;
 
 const MenuName = styled.a`

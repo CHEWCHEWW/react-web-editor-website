@@ -5,17 +5,27 @@ import Description from "../shared/Description";
 
 const MainTitleSection: React.FC = (): React.ReactElement => {
   return (
-    <section>
+    <MainSection>
       <Title>REACT WEB EDITOR</Title>
       <Description>A Simple WYSIWYG editor for react user</Description>
       <Description>It is light and simple library</Description>
-    </section>
+
+    </MainSection>
   );
 };
 
+const MainSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60rem;
+  height: 15rem;
+  margin: 5rem 0  0;
+`;
+
 const Title = styled.h1`
-  margin: 3rem 0 0 0;
-  font-size: 2.5rem;
+  margin: 2rem 0 3rem 0;
+  font-size: 3rem;
   letter-spacing: 0.3rem;
 `;
 
