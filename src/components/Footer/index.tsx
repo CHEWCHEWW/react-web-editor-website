@@ -1,11 +1,21 @@
 import React from "react";
+import styled from "styled-components";
 
 const Footer: React.FC = (): React.ReactElement => {
   return (
-    <footer>
+    <Wrapper>
 
-    </footer>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.footer`
+  display: fixed;
+  width: 100%;
+  height: 8rem;
+  border-top: 1px solid #c5c3c3;
+  margin: 10rem 0 0 0;
+  bottom: 0;
+`;
 
 export default Footer;

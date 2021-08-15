@@ -22,8 +22,8 @@ const SurmmerizeCardSection: React.FC = (): React.ReactElement => {
         alt="react"
       />
       <MiniCard
-        title={"Simple And Light"}
-        description={"Bye Bye All handlers. You need just simple props to achieve your goals."}
+        title={"Expandablity"}
+        description={"It's light and simple. you can generate your own application easy"}
         src={simpleUse} alt="simple use"
       />
     </CardSection>
@@ -35,6 +35,7 @@ const CardSection = styled.section`
   width: 55rem;
   min-width: 30rem;
   min-height: 20rem;
+  margin: 5rem 0 0 0;
   align-items: center;
   background-color: #FEEDEB;
   justify-content: space-evenly;

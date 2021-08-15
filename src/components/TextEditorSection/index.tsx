@@ -24,10 +24,10 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
       </CodeEditorWrapper>
       <EditorCardWrapper>
         <EditableBoard
-          width={33}
+          width={31}
           height={30}
           unit={"rem"}
-          backgroundColor={"#f3f3ea"}
+          backgroundColor={"#FBF8F880"}
         >
           <TextEditorBlock
             width={25}

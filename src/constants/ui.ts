@@ -9,5 +9,5 @@ export const STYLE_EDITOR_BLOCK_STYLES = [
 ];
 
 export const STYLE_EDITOR_BOARD_SIZE = { width: 30, height: 22 };
-export const STYLE_SECTION_BACKGROUND_COLOR = "#f8f3ee";
+export const STYLE_SECTION_BACKGROUND_COLOR = "#FBF8F880";
 export const DEFAULT_UNIT = "rem";
