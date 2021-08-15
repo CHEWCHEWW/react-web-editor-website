@@ -47,7 +47,6 @@ const EditorCardWrapper = styled.div`
   display: flex;
   width: 45%;
   margin: 0.4rem 0 0 -3rem;
-  border-radius: 20px;
 `;
 
 export default StyleEditorCard;

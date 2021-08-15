@@ -4,7 +4,7 @@ import Description from "../shared/Description";
 import MainPhrase from "../shared/MainPhrase";
 import MessageBoard from "../shared/MessageBoard";
 
-const MultiOptionPhrase: React.FC = (): React.ReactElement => {
+const VarietyTextExplanation: React.FC = (): React.ReactElement => {
   return (
     <MessageBoard>
       <MainPhrase>
@@ -21,4 +21,4 @@ const MultiOptionPhrase: React.FC = (): React.ReactElement => {
   );
 };
 
-export default MultiOptionPhrase;
+export default VarietyTextExplanation;

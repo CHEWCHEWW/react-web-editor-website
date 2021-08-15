@@ -17,7 +17,8 @@ const HookSection: React.FC = (): React.ReactElement => {
       <MessageWrapper>
         <MainPhrase>Customize your component using hook</MainPhrase>
         <Description>You can import single feature hook.</Description>
-        <Description>It provides simple process to generate your own component</Description>
+        <Description>It provides simple process to generate your own component.</Description>
+        <Description>You can generate web builder application using these hooks</Description>
       </MessageWrapper>
       <CodeEditorWrapper>
         <CodeEditor code={HOOK_USAGE_EXAMPLE} />
@@ -37,7 +38,7 @@ const MessageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 2rem 3rem 0 0;
+  margin: 0 3rem 0 0;
 `;
 
 const CodeEditorWrapper = styled.div`

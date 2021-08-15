@@ -4,13 +4,13 @@ import { EditableBoard, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import colorfulPattern from "../../../public/dot-pattern.png";
-import MultiOptionPhrase from "../MultiOptionPhrase";
 import MainPhrase from "../shared/MainPhrase";
+import VarietyTextExplanation from "../VarietyTextExplanation";
 
-const MultiOptionSection: React.FC = (): React.ReactElement => {
+const VarietyTextSection: React.FC = (): React.ReactElement => {
   return (
     <OptionSection>
-      <MultiOptionPhrase />
+      <VarietyTextExplanation />
       <Grid>
         <TextEditorWrapper>
           <EditableBoard
@@ -132,4 +132,4 @@ const TextEditorWrapper = styled.div`
   background: linear-gradient(125deg, #adb3dd, #e0ebc4);
 `;
 
-export default MultiOptionSection;
+export default VarietyTextSection;

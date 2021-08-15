@@ -42,7 +42,7 @@ const EditorSection = styled.section`
   align-items: center;
   width: 60rem;
   height: 60rem;
-  margin: 10rem 0 0 0;
+  margin: 7rem 0 0 0;
 `;
 
 const Content = styled.div`

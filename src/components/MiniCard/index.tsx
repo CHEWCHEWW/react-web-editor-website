@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -19,12 +20,13 @@ const MiniCard: React.FC<MiniCardProps> = ({
   title,
   description,
   color,
-  children,
+  src,
+  alt,
 }): React.ReactElement => {
   return (
     <CardBord>
       <Icon color={color}>
-        {children}
+        <Image src={src} alt={alt} />
       </Icon>
       <Title>{title}</Title>
       <Description>{description}</Description>

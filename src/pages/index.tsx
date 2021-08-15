@@ -6,12 +6,13 @@ import React from "react";
 import styled from "styled-components";
 
 import DragAndDropSection from "../components/DragAndDropSection";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HookSection from "../components/HookSection";
-import MultiOptionSection from "../components/MultiOptionSection";
 import StyleEditorSection from "../components/StyleEditorSection";
 import SummerizeCardSection from "../components/SummerizeCardSection";
 import TextEditorSection from "../components/TextEditorSection";
+import VarietyTextSection from "../components/VarietyTextSection";
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -34,12 +35,14 @@ const Page: React.FC = (): React.ReactElement => {
         </Header>
         <Title>REACT WEB EDITOR</Title>
         <Description>A Simple WYSIWYG editor for react user</Description>
+        <Description>It is light and simple library</Description>
         <SummerizeCardSection />
         <StyleEditorSection />
         <TextEditorSection />
         <DragAndDropSection />
         <HookSection />
-        <MultiOptionSection />
+        <VarietyTextSection />
+        <Footer />
       </PageWrapper>
     </>
   );
