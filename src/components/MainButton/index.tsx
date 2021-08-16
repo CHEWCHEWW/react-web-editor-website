@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 interface MainButtonProps {
   name?: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const MainButton: React.FC<MainButtonProps> = ({
