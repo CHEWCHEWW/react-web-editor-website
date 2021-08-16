@@ -76,7 +76,7 @@ const EditorSection = styled.section`
   display: flex;
   width: 70rem;
   height: 30rem;
-  margin: 2rem 0 0 0;
+  margin: 8rem 0 0 0;
   color: #232665;
   font-weight: bold;
 `;
@@ -102,7 +102,8 @@ const Message = styled.div`
   width: 90%;
   height: 20%;
   font-size: 22px;
-  color: black;
+  font-weight: 400;
+  color: #747475;
   margin: 0 0 3rem 0;
   line-height: 2.4rem;
 

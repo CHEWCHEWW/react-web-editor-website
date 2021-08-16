@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const Description = styled.h3`
+const SubSentence = styled.h3`
   display: flex;
   justify-content: center;
   font-size: 20px;
-  margin: 0.5rem auto;
+  margin: 0.2rem;
+  color: #9d9da0;
 `;
 
-export default Description;
+export default SubSentence;

@@ -18,6 +18,6 @@ const Template: ComponentStory<typeof MainVideoPlayer> = (args) => <MainVideoPla
 export const Default = Template.bind({});
 
 Default.args = {
-  src: "/speedUp.mp4",
+  src: "/main-video.mp4",
   type: "video/mp4",
 };

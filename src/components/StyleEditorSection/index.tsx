@@ -9,7 +9,7 @@ import {
   STYLE_EDITOR_BOARD_SIZE,
   STYLE_SECTION_BACKGROUND_COLOR,
 } from "../../constants/ui";
-import EditorSectionPhrase from "../EditorSectionPhrase";
+import EditorSectionSentence from "../EditorSectionSentence";
 import StyleEditorCard from "../StyleEditorCard";
 
 const CodeEditor = dynamic(
@@ -20,7 +20,7 @@ const CodeEditor = dynamic(
 const StyleEditorSection: React.FC = (): React.ReactElement => {
   return (
     <EditorSection>
-      <EditorSectionPhrase />
+      <EditorSectionSentence />
       <Content>
         <StyleEditorCard
           editorBoardSize={STYLE_EDITOR_BOARD_SIZE}
@@ -41,15 +41,15 @@ const EditorSection = styled.section`
   flex-direction: column;
   align-items: center;
   width: 60rem;
-  height: 60rem;
-  margin: 7rem 0 0 0;
+  height: 62rem;
+  margin: 9rem 0 0 0;
 `;
 
 const Content = styled.div`
   display: flex;
   width: 100%;
-  height: 80%;
-  margin: 6rem 0 0 0;
+  height: 55%;
+  margin: 8rem 0 0 0;
 `;
 
 const CodeEditorWrapper = styled.div`

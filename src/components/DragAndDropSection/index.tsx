@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { DRAG_AND_DROP_BLOCK } from "../../constants/codeExample";
 import BounceArrowMessage from "../BounceArrowMessage";
 import DragAndDropCard from "../DragAndDropCard";
-import DragAndDropPhrase from "../DragAndDropPhrase";
+import DragAndDropSentence from "../DragAndDropSentence";
 
 const CodeEditor = dynamic(
   () => import("../CodeEditor"),
@@ -16,7 +16,7 @@ const CodeEditor = dynamic(
 const DragAndDropSection: React.FC = (): React.ReactElement => {
   return (
     <Section>
-      <DragAndDropPhrase />
+      <DragAndDropSentence />
       <DragAndDropCard />
       <BounceArrowMessage
         icon={faArrowUp}
@@ -33,8 +33,8 @@ const DragAndDropSection: React.FC = (): React.ReactElement => {
 const Section = styled.section`
   display: flex;
   width: 80rem;
-  height: 53rem;
-  margin: 14rem 0 0 0;
+  height: 65rem;
+  margin: 9rem 0 0 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;

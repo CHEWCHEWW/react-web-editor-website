@@ -18,7 +18,7 @@ const MainVideoPlayer: React.FC<MainVideoPlayerProps> = ({
 };
 
 const VideoPlayer = styled.video`
-  width: 30rem;
+  width: 25rem;
 `;
 
 export default MainVideoPlayer;

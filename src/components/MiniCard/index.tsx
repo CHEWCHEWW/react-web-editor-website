@@ -6,7 +6,7 @@ import { StaticImageData } from "../../types/style";
 
 interface MiniCardProps {
   title: string;
-  description: string;
+  subSentence: string;
   color?: string;
   alt: string;
   src: StaticImageData;
@@ -18,7 +18,7 @@ interface MiniCardStyle {
 
 const MiniCard: React.FC<MiniCardProps> = ({
   title,
-  description,
+  subSentence,
   color,
   src,
   alt,
@@ -29,7 +29,7 @@ const MiniCard: React.FC<MiniCardProps> = ({
         <Image src={src} alt={alt} />
       </Icon>
       <Title>{title}</Title>
-      <Description>{description}</Description>
+      <SubSentence>{subSentence}</SubSentence>
     </CardBord>
   );
 };
@@ -62,7 +62,7 @@ const Title = styled.h3`
   color: #151331;
 `;
 
-const Description = styled.h4`
+const SubSentence = styled.h4`
   width: 60%;
   margin: 0;
   padding: 0;

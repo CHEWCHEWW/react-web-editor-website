@@ -20,7 +20,7 @@ const Page: React.FC = (): React.ReactElement => {
     <>
       <Head>
         <title>react-web-editor</title>
-        <meta name="description" content="react-web-editor is a simple WYSIWYG editor. You can edit component easy just using mouse click" />
+        <meta name="SubSentence" content="react-web-editor is a simple WYSIWYG editor. You can edit component easy just using mouse click" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <PageWrapper>
@@ -53,6 +53,7 @@ const PageWrapper = styled.div`
   width: 100vw;
   align-items: center;
   font-family: "Poppins", serif;
+  color: #04012b;
 `;
 
 const MenuName = styled.a`

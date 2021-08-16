@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-const MessageBoard = styled.div`
+const SentenceArea = styled.div`
   display: flex;
   flex-direction: column;
   width: 70rem;
-  margin: 0 0 1rem 0;
 `;
 
-export default MessageBoard;
+export default SentenceArea;

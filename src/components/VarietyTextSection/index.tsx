@@ -4,13 +4,13 @@ import { EditableBoard, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import colorfulPattern from "../../../public/dot-pattern.png";
-import MainPhrase from "../shared/MainPhrase";
-import VarietyTextExplanation from "../VarietyTextExplanation";
+import MainSentence from "../shared/MainSentence";
+import VarietyTextSentence from "../VarietyTextSentence";
 
 const VarietyTextSection: React.FC = (): React.ReactElement => {
   return (
     <OptionSection>
-      <VarietyTextExplanation />
+      <VarietyTextSentence />
       <Grid>
         <TextEditorWrapper>
           <EditableBoard
@@ -102,9 +102,9 @@ const VarietyTextSection: React.FC = (): React.ReactElement => {
           </EditableBoard>
         </TextEditorWrapper>
       </Grid>
-      <MainPhrase>
+      <MainSentence>
         Hover your cursor to text, and try yourself.
-      </MainPhrase>
+      </MainSentence>
     </OptionSection>
   );
 };
@@ -115,7 +115,7 @@ const OptionSection = styled.section`
   justify-content: center;
   flex-direction: column;
   width: 60rem;
-  height: 60rem;
+  height: 70rem;
   margin: 6rem 0 0 0;
 `;
 
@@ -124,7 +124,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 17rem);
   grid-template-rows: repeat(2, 17rem);
   grid-gap: 2rem;
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 8rem 0;
 `;
 
 const TextEditorWrapper = styled.div`
