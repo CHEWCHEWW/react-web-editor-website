@@ -13,7 +13,7 @@ const Wrapper = styled.footer`
   display: fixed;
   width: 100%;
   height: 3rem;
-  background-color: #e7e0de;
+  background-color: ${({ theme }) => theme.FooterBackgroundColor};
   margin: 25rem 0 0 0;
   bottom: 0;
 `;

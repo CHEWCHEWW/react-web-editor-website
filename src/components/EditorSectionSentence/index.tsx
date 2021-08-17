@@ -28,7 +28,7 @@ const EditorSectionSentence: React.FC = (): React.ReactElement => {
         </SubSentence>
       </SubSentenceArea>
       <BounceArrowMessage
-        animation={"bounceDown"}
+        animation={"bounce-down"}
         message={"Try It Now"}
         icon={faArrowDown}
       />

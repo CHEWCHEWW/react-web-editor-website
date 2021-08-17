@@ -16,7 +16,7 @@ const BounceMessage = styled.div<BounceMessageStyle>`
   z-index: 1;
   animation: ${({ animation }) => animation} 2s infinite;
 
-  @keyframes bounceDown {
+  @keyframes bounce-down {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
     }
@@ -30,7 +30,7 @@ const BounceMessage = styled.div<BounceMessageStyle>`
     }
   }
 
-  @keyframes bounceUp {
+  @keyframes bounce-up {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
     }

@@ -42,7 +42,7 @@ const CardBord = styled.div`
   height: 78%;
   min-height: 15.3rem;
   padding: 0.5rem;
-  background-color: white;
+  background-color: ${({ theme }) => theme.White};
   border-radius: 0.4rem;
 `;
 
@@ -59,7 +59,7 @@ const Title = styled.h3`
   margin: 0 0 0.5rem 0;
   padding: 0;
   font-weight: 600;
-  color: #151331;
+  color: ${({ theme }) => theme.MiniCardTitleColor};
 `;
 
 const SubSentence = styled.h4`
@@ -68,7 +68,7 @@ const SubSentence = styled.h4`
   padding: 0;
   font-weight: 400;
   font-size: 0.8rem;
-  color: #8f8e8e;
+  color: ${({ theme }) => theme.MiniCardGray};
 `;
 
 export default MiniCard;

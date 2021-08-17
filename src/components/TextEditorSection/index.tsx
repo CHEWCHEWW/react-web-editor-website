@@ -77,7 +77,6 @@ const EditorSection = styled.section`
   width: 70rem;
   height: 30rem;
   margin: 8rem 0 0 0;
-  color: #232665;
   font-weight: bold;
 `;
 
@@ -103,13 +102,13 @@ const Message = styled.div`
   height: 20%;
   font-size: 22px;
   font-weight: 400;
-  color: #747475;
+  color: ${({ theme }) => theme.TextEditorTextColor};
   margin: 0 0 3rem 0;
   line-height: 2.4rem;
 
   ::before {
     content: "";
-    border-left: 4px solid #E0DFDC;
+    border-left: 4px solid ${({ theme }) => theme.TextEditorBorderColor};
     margin-right: 1rem;
   }
 `;

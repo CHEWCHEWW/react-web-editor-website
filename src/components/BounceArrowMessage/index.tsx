@@ -4,7 +4,7 @@ import React from "react";
 
 import BounceMessage from "../shared/BounceMessage";
 
-type Animation = "bounceUp" | "bounceDown";
+type Animation = "bounce-up" | "bounce-down";
 
 interface BounceArrowMessageProps {
   icon: IconDefinition;

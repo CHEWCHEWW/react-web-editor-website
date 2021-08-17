@@ -22,7 +22,7 @@ const DragAndDropSection: React.FC = (): React.ReactElement => {
       <BounceArrowMessage
         icon={faArrowUp}
         message={"Change Order"}
-        animation={"bounceUp"}
+        animation={"bounce-up"}
       />
       <CodeEditorWrapper>
         <CodeEditor code={DRAG_AND_DROP_BLOCK} />
@@ -35,7 +35,7 @@ const Background = styled.span`
   width: 65rem;
   height: 70rem;
   z-index: -1;
-  background-color: white;
+  background-color: ${({ theme }) => theme.White};
   position: absolute;
 
   ::before {

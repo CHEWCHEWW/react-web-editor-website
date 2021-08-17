@@ -65,7 +65,7 @@ const Background = styled.span`
   height: 110rem;
   margin: 1rem 0 0 0;
   position: absolute;
-  background-color: #f3e9e6;
+  background-color: ${({ theme }) => theme.MainPink};
   z-index: -2;
 `;
 

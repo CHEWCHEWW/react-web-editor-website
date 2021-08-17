@@ -118,11 +118,11 @@ const ShiningText = styled.div`
   background: linear-gradient(45deg, #daac78, #e4b3c5, #88a8ee, #af8dd3);
   background-clip: text;
   background-size: 300% 300%;
-  animation: gradientText 3s ease infinite;
+  animation: gradient-text 3s ease infinite;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 
-  @keyframes gradientText {
+  @keyframes gradient-text {
     0% {
       background-position: 0% 50%;
     }

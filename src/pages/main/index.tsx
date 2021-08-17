@@ -59,7 +59,7 @@ const PageWrapper = styled.div`
   width: 100vw;
   align-items: center;
   font-family: "Poppins", serif;
-  color: #04012b;
+  color: ${({ theme }) => theme.MainTextColor};
 `;
 
 const MenuName = styled.a`
@@ -67,7 +67,7 @@ const MenuName = styled.a`
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: #CDCDC9;
+  color: ${({ theme }) => theme.HeaderTextColor};
   text-decoration: none;
 `;
 

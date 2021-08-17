@@ -25,10 +25,10 @@ const Button = styled.button`
   width: 10rem;
   height: 2.5rem;
   margin: 0.8rem;
-  background-color: #04012b;
+  background-color: ${({ theme }) => theme.MainTextColor};
   border: 0;
   border-radius: 10px;
-  color: white;
+  color: ${({ theme }) => theme.White};
   font-weight: 600;
   font-size: 1rem;
 `;

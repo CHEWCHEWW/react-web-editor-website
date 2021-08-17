@@ -18,8 +18,8 @@ const HeaderBoard = styled.header`
   height: 2rem;
   top: 0;
   left: 0;
-  background-color: white;
-  border-bottom: 1px solid #E8E8E6;
+  background-color: ${({ theme }) => theme.White};
+  border-bottom: 1px solid ${({ theme }) => theme.HeadrBorderColor};
   z-index: 5;
 `;
 
@@ -32,7 +32,7 @@ const MenuField = styled.div`
   align-items: center;
   top: 0;
   right: 3rem;
-  color: #CDCDC9;
+  color: ${({ theme }) => theme.HeaderTextColor};
 `;
 
 export default Header;

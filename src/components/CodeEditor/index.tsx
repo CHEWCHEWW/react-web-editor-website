@@ -41,7 +41,6 @@ const CodeEditorWrapper = styled.div`
     height: auto;
     overflow: hidden;
     border-radius: 0.5rem;
-    /* position: absolute; */
   }
 `;
 
