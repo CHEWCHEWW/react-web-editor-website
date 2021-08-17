@@ -10,11 +10,11 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HookSection from "../../components/HookSection";
 import MainTitleSection from "../../components/MainTitleSection";
-import MainVideoPlayer from "../../components/MainVideoPlayer";
 import StyleEditorSection from "../../components/StyleEditorSection";
 import SummerizeCardSection from "../../components/SummerizeCardSection";
 import TextEditorSection from "../../components/TextEditorSection";
 import VarietyTextSection from "../../components/VarietyTextSection";
+import VideoSection from "../../components/VideoSection";
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -46,7 +46,7 @@ const Page: React.FC = (): React.ReactElement => {
         <DragAndDropSection />
         <HookSection />
         <VarietyTextSection />
-        <MainVideoPlayer src={"/example.mp4"} type={"video/mp4"} />
+        <VideoSection />
         <Footer />
       </PageWrapper>
     </>

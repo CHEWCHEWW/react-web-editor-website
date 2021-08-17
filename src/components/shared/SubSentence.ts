@@ -5,7 +5,7 @@ const SubSentence = styled.h3`
   justify-content: center;
   font-size: 20px;
   margin: 0.2rem;
-  color: ${({ theme }) => theme.SubPink};
+  color: ${({ theme }) => theme.MainGray};
 `;
 
 export default SubSentence;

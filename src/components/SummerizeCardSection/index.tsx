@@ -55,10 +55,10 @@ const CardSection = styled.section`
 
 const SubTitle = styled.div`
   display: flex;
-  align-items: center;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 600;
+  font-family: "Playfair Display", serif;
 `;
 
 export default SurmmerizeCardSection;
