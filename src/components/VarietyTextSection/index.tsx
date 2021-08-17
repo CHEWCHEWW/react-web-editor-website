@@ -4,13 +4,15 @@ import { EditableBoard, TextEditorBlock } from "react-web-editor";
 import styled from "styled-components";
 
 import colorfulPattern from "../../../public/dot-pattern.png";
-import MainSentence from "../shared/MainSentence";
 import VarietyTextSentence from "../VarietyTextSentence";
 
 const VarietyTextSection: React.FC = (): React.ReactElement => {
   return (
     <OptionSection>
       <VarietyTextSentence />
+      <ShiningText>
+        Hover your cursor to text, Make your style!
+      </ShiningText>
       <Grid>
         <TextEditorWrapper>
           <EditableBoard
@@ -102,12 +104,38 @@ const VarietyTextSection: React.FC = (): React.ReactElement => {
           </EditableBoard>
         </TextEditorWrapper>
       </Grid>
-      <MainSentence>
-        Hover your cursor to text, and try yourself.
-      </MainSentence>
     </OptionSection>
   );
 };
+
+const ShiningText = styled.div`
+  width: 60%;
+  margin: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  background: linear-gradient(45deg, #daac78, #e4b3c5, #88a8ee, #af8dd3);
+  background-clip: text;
+  background-size: 300% 300%;
+  animation: gradientText 3s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  @keyframes gradientText {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+`;
 
 const OptionSection = styled.section`
   display: flex;
@@ -124,7 +152,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 17rem);
   grid-template-rows: repeat(2, 17rem);
   grid-gap: 2rem;
-  margin: 3rem 0 8rem 0;
+  margin: 3rem 0 5rem 0;
 `;
 
 const TextEditorWrapper = styled.div`

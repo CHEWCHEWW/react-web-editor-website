@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   justify-content: center;
   width: 100vw;
   height: 40rem;
-  background-color: #f5f0ee;
+  background-color: #F2E7E4;
   margin: 12rem 0 0 0;
 `;
 

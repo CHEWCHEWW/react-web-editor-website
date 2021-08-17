@@ -40,7 +40,7 @@ const CardRow = styled.div`
   min-width: 30rem;
   min-height: 20rem;
   margin: 4rem 0 0 0;
-  background-color: #FEEDEB;
+  background-color: #F2E2E1;
 `;
 
 const CardSection = styled.section`

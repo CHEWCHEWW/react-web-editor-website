@@ -5,15 +5,16 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
-import DragAndDropSection from "../components/DragAndDropSection";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import HookSection from "../components/HookSection";
-import MainTitleSection from "../components/MainTitleSection";
-import StyleEditorSection from "../components/StyleEditorSection";
-import SummerizeCardSection from "../components/SummerizeCardSection";
-import TextEditorSection from "../components/TextEditorSection";
-import VarietyTextSection from "../components/VarietyTextSection";
+import DragAndDropSection from "../../components/DragAndDropSection";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import HookSection from "../../components/HookSection";
+import MainTitleSection from "../../components/MainTitleSection";
+import MainVideoPlayer from "../../components/MainVideoPlayer";
+import StyleEditorSection from "../../components/StyleEditorSection";
+import SummerizeCardSection from "../../components/SummerizeCardSection";
+import TextEditorSection from "../../components/TextEditorSection";
+import VarietyTextSection from "../../components/VarietyTextSection";
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -25,12 +26,16 @@ const Page: React.FC = (): React.ReactElement => {
       </Head>
       <PageWrapper>
         <Header>
-          <Link href="/demo" passHref>
+          <Link href="/documents" passHref>
             <MenuName>
-              DEMO
+              Docs
             </MenuName>
           </Link>
-          <MenuName target="_blank" href="https://github.com/CHEWCHEWW/react-web-editor/" rel="noreferrer">
+          <MenuName
+            target="_blank"
+            href="https://github.com/CHEWCHEWW/react-web-editor/"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </MenuName>
         </Header>
@@ -41,6 +46,7 @@ const Page: React.FC = (): React.ReactElement => {
         <DragAndDropSection />
         <HookSection />
         <VarietyTextSection />
+        <MainVideoPlayer src={"/example.mp4"} type={"video/mp4"} />
         <Footer />
       </PageWrapper>
     </>

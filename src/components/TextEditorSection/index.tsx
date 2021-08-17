@@ -27,7 +27,7 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
           width={31}
           height={30}
           unit={"rem"}
-          backgroundColor={"#FBF8F880"}
+          backgroundColor={"rgba(252, 249, 238, 0.87)"}
         >
           <TextEditorBlock
             width={25}

@@ -13,13 +13,23 @@ const MainTitleSection: React.FC = (): React.ReactElement => {
         <SubSentence>You can test it directly on this site. Click on the pictures.</SubSentence>
       </SubSentenceContent>
       <ButtonsArea>
-        <MainButton>
-          Try with install
-        </MainButton>
+        <ButtonLink
+          target="_blank"
+          href="https://www.npmjs.com/package/react-web-editor"
+          rel="noreferrer"
+        >
+          <MainButton>
+            Try with install
+          </MainButton>
+        </ButtonLink>
       </ButtonsArea>
     </MainSection>
   );
 };
+
+const ButtonLink = styled.a`
+  text-decoration: none;
+`;
 
 const MainSection = styled.section`
   display: flex;

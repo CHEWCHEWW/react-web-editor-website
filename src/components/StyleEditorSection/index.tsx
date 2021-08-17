@@ -32,6 +32,7 @@ const StyleEditorSection: React.FC = (): React.ReactElement => {
           <CodeEditor code={STYLE_EDITOR_BLOCK} />
         </CodeEditorWrapper>
       </Content>
+      <Background />
     </EditorSection>
   );
 };
@@ -57,6 +58,15 @@ const CodeEditorWrapper = styled.div`
   height: 20rem;
   margin: -2rem 0 0 2.4rem;
   z-index: -1;
+`;
+
+const Background = styled.span`
+  width: 34rem;
+  height: 110rem;
+  margin: 1rem 0 0 0;
+  position: absolute;
+  background-color: #f3e9e6;
+  z-index: -2;
 `;
 
 export default StyleEditorSection;

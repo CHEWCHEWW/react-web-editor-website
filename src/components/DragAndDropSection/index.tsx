@@ -16,6 +16,7 @@ const CodeEditor = dynamic(
 const DragAndDropSection: React.FC = (): React.ReactElement => {
   return (
     <Section>
+      <Background />
       <DragAndDropSentence />
       <DragAndDropCard />
       <BounceArrowMessage
@@ -30,6 +31,34 @@ const DragAndDropSection: React.FC = (): React.ReactElement => {
   );
 };
 
+const Background = styled.span`
+  width: 65rem;
+  height: 70rem;
+  z-index: -1;
+  background-color: white;
+  position: absolute;
+
+  ::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  }
+
+  ::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+  }
+`;
+
 const Section = styled.section`
   display: flex;
   width: 80rem;
@@ -42,7 +71,7 @@ const Section = styled.section`
 
 const CodeEditorWrapper = styled.div`
   width: 55%;
-  margin : 3.5rem 0 0 0;
+  margin : 3.5rem 0 3rem 0;
 `;
 
 export default DragAndDropSection;

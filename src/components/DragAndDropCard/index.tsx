@@ -24,10 +24,9 @@ const DragAndDropCard: React.FC = (): React.ReactElement => {
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 14.3rem;
-  margin: 3rem 0;
+  height: 14rem;
+  margin: 2.5rem 0;
   justify-content: center;
-  background-color: #ebebe7;
 `;
 
 export default DragAndDropCard;
