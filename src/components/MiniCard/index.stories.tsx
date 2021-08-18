@@ -21,7 +21,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   title: "Are You Happy",
-  SubSentence: "Define Someting",
+  subSentence: "Define Someting",
   color: "pink",
   children: <Image src={react} alt="react" unoptimized />,
 };

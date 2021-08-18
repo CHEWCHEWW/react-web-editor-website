@@ -39,7 +39,7 @@ const ImageBackground = styled.div`
   width: 36rem;
   height: 23rem;
   margin: 2rem 0 0 -26rem;
-  background-color: ${({ theme }) => theme.FooterBackgroundColor};
+  background-color: ${({ theme }) => theme.VideoBackgroundColor};
   position: absolute;
   z-index: -1;
 `;

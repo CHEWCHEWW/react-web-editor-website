@@ -20,6 +20,6 @@ export const Default = Template.bind({});
 
 Default.args = {
   message: "happy",
-  animation: "bounceUp",
+  animation: "bounce-up",
   icon: faArrowUp,
 };

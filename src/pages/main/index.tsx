@@ -47,7 +47,9 @@ const Page: React.FC = (): React.ReactElement => {
         <HookSection />
         <VarietyTextSection />
         <VideoSection />
-        <Footer />
+        <Footer>
+          <p>chewchewchew3@gmail.com</p>
+        </Footer>
       </PageWrapper>
     </>
   );

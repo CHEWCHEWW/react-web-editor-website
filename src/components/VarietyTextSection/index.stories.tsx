@@ -16,6 +16,3 @@ export default {
 const Template: ComponentStory<typeof VarietyTextSection> = (args) => <VarietyTextSection { ...args } />;
 
 export const Default = Template.bind({});
-
-Default.args = {
-};

@@ -16,6 +16,3 @@ export default {
 const Template: ComponentStory<typeof DragAndDropCard> = (args) => <DragAndDropCard { ...args } />;
 
 export const Default = Template.bind({});
-
-Default.args = {
-};

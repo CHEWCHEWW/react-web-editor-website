@@ -16,6 +16,3 @@ export default {
 const Template: ComponentStory<typeof VarietyMessage> = (args) => <VarietyMessage { ...args } />;
 
 export const Default = Template.bind({});
-
-Default.args = {
-};

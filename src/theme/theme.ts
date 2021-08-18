@@ -11,7 +11,8 @@ export const theme: DefaultTheme = {
   MiniCardTitleColor: "#151331",
   MiniCardGray: "#8f8e8e",
   White: "#FFFFFF",
-  FooterBackgroundColor: "#FCF3EC",
+  VideoBackgroundColor: "#FCF3EC",
+  FooterBackgroundColor: "#EAE3E3",
   TextEditorTextColor: "#747475",
   TextEditorBorderColor: "#E0DFDC",
 };
