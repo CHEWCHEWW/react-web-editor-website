@@ -11,3 +11,5 @@ export const STYLE_EDITOR_BLOCK_STYLES = [
 export const STYLE_EDITOR_BOARD_SIZE = { width: 30, height: 22 };
 export const STYLE_SECTION_BACKGROUND_COLOR = "rgba(245, 245, 245, 0.88)";
 export const DEFAULT_UNIT = "rem";
+
+export const EMAIL_ADDRESS = "chewchewchew3@gmail.com";

@@ -15,6 +15,7 @@ import SummerizeCardSection from "../../components/SummerizeCardSection";
 import TextEditorSection from "../../components/TextEditorSection";
 import VarietyTextSection from "../../components/VarietyTextSection";
 import VideoSection from "../../components/VideoSection";
+import { EMAIL_ADDRESS } from "../../constants/ui";
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -48,7 +49,7 @@ const Page: React.FC = (): React.ReactElement => {
         <VarietyTextSection />
         <VideoSection />
         <Footer>
-          <p>chewchewchew3@gmail.com</p>
+          <p>{EMAIL_ADDRESS}</p>
         </Footer>
       </PageWrapper>
     </>

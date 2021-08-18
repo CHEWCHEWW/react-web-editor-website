@@ -18,7 +18,7 @@ const Wrapper = styled.footer`
   background-color: ${({ theme }) => theme.FooterBackgroundColor};
   bottom: 0;
   font-size: 0.5rem;
-  color: #a39a9a;
+  color: ${({ theme }) => theme.FooterTextColor};
 `;
 
 export default Footer;
