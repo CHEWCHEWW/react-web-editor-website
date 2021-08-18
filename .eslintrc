@@ -1,7 +1,7 @@
 {
   "extends": [
     "eslint:recommended",
-    "next", 
+    "next",
     "next/core-web-vitals"
   ],
   "plugins": ["simple-import-sort"],
@@ -12,6 +12,7 @@
       { "avoidEscape": true, "allowTemplateLiterals": true }
     ],
     "no-unused-vars": "warn",
+    "no-undef": "off",
     "no-page-custom":"off",
     "no-var": "error",
     "no-console": "warn",

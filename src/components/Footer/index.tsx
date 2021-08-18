@@ -14,7 +14,6 @@ const Wrapper = styled.footer`
   width: 100%;
   height: 3rem;
   background-color: ${({ theme }) => theme.FooterBackgroundColor};
-  margin: 25rem 0 0 0;
   bottom: 0;
 `;
 

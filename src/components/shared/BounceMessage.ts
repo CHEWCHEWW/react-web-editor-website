@@ -13,6 +13,7 @@ const BounceMessage = styled.div<BounceMessageStyle>`
   height: 2.2rem;
   font-size: 35px;
   font-weight: 600;
+  font-family: "Playfair Display", serif;
   z-index: 1;
   animation: ${({ animation }) => animation} 2s infinite;
 

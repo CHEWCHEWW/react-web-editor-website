@@ -13,16 +13,18 @@ const VarietyMessage: React.FC = (): React.ReactElement => {
 
 const TextBackground = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  background-color: #F5F5F5;
+  width: 70%;
+  margin: 2rem 0 1rem 0;
+  padding: 0;
   box-shadow: inset 0.2rem 0.2rem 0.5rem #E0D9DC, inset -0.2rem -0.2rem 0.5rem #FFFFFF;
 `;
 
 const ShiningText = styled.div`
-  width: 60%;
-  margin: 2rem;
+  width: 95%;
+  margin: 1rem;
   text-align: center;
   font-size: 2.5rem;
   font-family: "Montserrat", serif;

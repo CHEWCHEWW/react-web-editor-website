@@ -1,10 +1,12 @@
-export const reactStrictMode = true;
-export function redirects() {
-  return [
-    {
-      source: "/",
-      destination: "/home",
-      permanent: true,
-    }
-  ];
-}
+module.exports = {
+  reactStrictMode: true,
+  redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      }
+    ];
+  },
+};
