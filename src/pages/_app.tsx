@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../theme/globalStyle";
 import { theme } from "../theme/theme";
 
-const MyApp =({ Component, pageProps }: AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <GlobalStyle />
