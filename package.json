@@ -2,6 +2,8 @@
   "name": "make-your-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.reactwebeditor.com",
+  "repository": "https://github.com/CHEWCHEWW/react-web-editor",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

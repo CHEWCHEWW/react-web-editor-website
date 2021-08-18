@@ -27,7 +27,7 @@ const Page: React.FC = (): React.ReactElement => {
       </Head>
       <PageWrapper>
         <Header>
-          <Link href="/documents" passHref>
+          <Link href="/docs" passHref>
             <MenuName>
               Docs
             </MenuName>

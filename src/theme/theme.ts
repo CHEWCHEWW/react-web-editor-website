@@ -13,6 +13,7 @@ export const theme: DefaultTheme = {
   White: "#FFFFFF",
   VideoBackgroundColor: "#FCF3EC",
   FooterBackgroundColor: "#EAE3E3",
+  FooterTextColor: "#a39a9a",
   TextEditorTextColor: "#747475",
   TextEditorBorderColor: "#E0DFDC",
 };

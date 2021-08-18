@@ -40,8 +40,8 @@ const MiniMessage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 15rem;
-  height: 2rem;
+  min-width: 16rem;
+  height: 1.5rem;
   margin: 2rem 0 0 -1rem;
   border-radius: 5px;
   border: 2px solid ${({ theme }) => theme.MiniCardGray};
