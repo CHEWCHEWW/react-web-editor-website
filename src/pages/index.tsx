@@ -5,17 +5,17 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
-import DragAndDropSection from "../../components/DragAndDropSection";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import HookSection from "../../components/HookSection";
-import MainTitleSection from "../../components/MainTitleSection";
-import StyleEditorSection from "../../components/StyleEditorSection";
-import SummerizeCardSection from "../../components/SummerizeCardSection";
-import TextEditorSection from "../../components/TextEditorSection";
-import VarietyTextSection from "../../components/VarietyTextSection";
-import VideoSection from "../../components/VideoSection";
-import { EMAIL_ADDRESS } from "../../constants/ui";
+import DragAndDropSection from "../components/DragAndDropSection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import HookSection from "../components/HookSection";
+import MainTitleSection from "../components/MainTitleSection";
+import StyleEditorSection from "../components/StyleEditorSection";
+import SummerizeCardSection from "../components/SummerizeCardSection";
+import TextEditorSection from "../components/TextEditorSection";
+import VarietyTextSection from "../components/VarietyTextSection";
+import VideoSection from "../components/VideoSection";
+import { EMAIL_ADDRESS } from "../constants/ui";
 
 const Page: React.FC = (): React.ReactElement => {
   return (
