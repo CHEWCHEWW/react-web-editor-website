@@ -40,7 +40,7 @@ const MiniMessage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 13rem;
+  min-width: 15rem;
   height: 2rem;
   margin: 2rem 0 0 -1rem;
   border-radius: 5px;
