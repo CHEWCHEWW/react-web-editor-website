@@ -19,7 +19,7 @@ const MainTitleSection: React.FC = (): React.ReactElement => {
           rel="noreferrer"
         >
           <MainButton>
-            Try with install
+            Try this!
           </MainButton>
         </ButtonLink>
       </ButtonsArea>

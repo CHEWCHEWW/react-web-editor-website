@@ -22,7 +22,7 @@ const Page: React.FC = (): React.ReactElement => {
     <>
       <Head>
         <title>react-web-editor</title>
-        <meta name="SubSentence" content="react-web-editor is a simple WYSIWYG editor. You can edit component easy just using mouse click" />
+        <meta name="description" content="react-web-editor is a simple WYSIWYG editor. You can edit component easy just using mouse click" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <PageWrapper>
