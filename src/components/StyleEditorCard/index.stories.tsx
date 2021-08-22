@@ -20,9 +20,11 @@ export default {
 
 const Template: ComponentStory<typeof StyleEditorCard> = (args) => <StyleEditorCard { ...args } />;
 
-export const Default = Template.bind({
+export const Default = Template.bind({});
+
+Default.args = {
   editorStyles: STYLE_EDITOR_BLOCK_STYLES,
   unit: DEFAULT_UNIT,
   editorBoardSize: STYLE_EDITOR_BOARD_SIZE,
   backgroundColor: STYLE_SECTION_BACKGROUND_COLOR,
-});
+};
