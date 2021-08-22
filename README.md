@@ -21,14 +21,14 @@ npm run start
 
 - npmjs를 이용해 publish
 
-[log](https://github.com/CHEWCHEWW/react-web-editor#version-up-log)
+[update log](https://github.com/CHEWCHEWW/react-web-editor#version-up-log)
 
 ### react-web-editor-introduce
 
 - vercel을 이용해 deploy
 
 ## 🎨 What is React Web Editor
-<p align="center"> 라이브러리 사용법은 [여기](https://github.com/CHEWCHEWW/react-web-editor)서 확인하실 수 있습니다. </p>
+라이브러리 사용법은 [여기](https://github.com/CHEWCHEWW/react-web-editor)서 확인하실 수 있습니다.  
 
 - React Web editor는 ui를 동적으로 변경할 수 있는 component의 및 훅들을 제공하는 라이브러리입니다.  
 - Resizing, Draggable, Drag and Drop 등의 기능을 지원하고, 또한 동적으로 이미지를 업로드하거나, component의 색상과 텍스트를 스타일링 할 수 있습니다.  
@@ -54,7 +54,7 @@ styled component들을 import하여 새로 component를 확장할 수 있도록 
 - custom 설정으로 configuration 관리 및 프로젝트 확장을 온전히 제어 할 수 있도록 webpack을 이용해 빌드했습니다.  
 
 ## What is react-web-editor-introduce
-<p align="center">[website](https://reactwebeditor.com) </p>
+[visit react-web-editor-website](https://reactwebeditor.com)  
 
 - react-web-editor 라이브러리의 데모 및 설명 사이트입니다.  
 - 각 기능들을 간단한 코드와 함께 테스트 할 수 있게 구현했습니다.  
@@ -90,9 +90,8 @@ styled component들을 import하여 새로 component를 확장할 수 있도록 
 
 ## 📃 Stack
 
-### react-web-editor
-<p align="center"> [react, typescript, webpack, styled-components, ESlint] </p>
-<p align="center"> 사용자의 확장성을 고려하여 최소한의 디펜던시를 유지하고자 했습니다. </p>
+### react-web-editor: [react, typescript, webpack, styled-components, ESlint]
+사용자의 확장성을 고려하여 최소한의 디펜던시를 유지하고자 했습니다.
 
 - typescript  
   이번 프로젝트에서 사실상 필수적이라고 생각했습니다.  
@@ -101,9 +100,7 @@ styled component들을 import하여 새로 component를 확장할 수 있도록 
 - webpack  
   빌드를 가볍고 심플하게 가져가면서, 작업환경을 스스로 커스텀 하기 위해서 사용했습니다.
   
-### react-web-editor-introduce
-<p align="center"> [react, next.js, typescript, storybook, styled-components, ESlint] </p>
-
+### react-web-editor-introduce: [react, next.js, typescript, storybook, styled-components, ESlint]
 - next.js  
   이번 프로젝트에서 많이 고심했던 것은 어떻게 해야 다른 사용자들에게 프로젝트가 노출 될 수 있을지에 대한 것이었습니다.  
   next.js의 경우 SSR 이기에 크롤링이 보다 더 수월하여, SEO에 더 좋은 효율을 보인다고 알고 있습니다.  
