@@ -4,8 +4,12 @@
 
 ### WYSIWYG 기능을 사용할 수 있는 라이브러리, 그리고 그 데모 사이트에 대해 소개합니다.
 
-라이브러리 소스 코드 및 documentations은 아래 github에서 보실 수 있습니다.  
- [react-web-editor Github](https://github.com/CHEWCHEWW/react-web-editor)  
+라이브러리 소스 코드 및 documentations은 아래 링크에서 보실 수 있습니다.  
+<p></p>
+ 
+[react-web-editor github](https://github.com/CHEWCHEWW/react-web-editor)  
+<p></p>
+ <img src="https://drive.google.com/uc?id=1NJyeW4udALFzWlyqY9cG6WAY6HFa9Qm6" alt="main image" />
 
 [Demo & Introduce](https://reactwebeditor.com)  
 
