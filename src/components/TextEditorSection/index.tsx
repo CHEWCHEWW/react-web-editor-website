@@ -18,7 +18,7 @@ const TextEditorSection: React.FC = (): React.ReactElement => {
         <Message>
           If You Click second tab,
           <br/>
-          Settings window appears on the screen.
+          The Settings window appears on the screen.
         </Message>
         <CodeEditor code={TEXT_EDITOR_BLOCK} />
       </CodeEditorWrapper>

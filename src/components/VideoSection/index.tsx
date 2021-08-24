@@ -17,7 +17,8 @@ const VideoSection: React.FC = (): React.ReactElement => {
       <MainVideoPlayer src={"/example.mp4"} type={"video/mp4"} />
       <SentenceWrapper>
         <Sentence>
-          Generate Your Page using React Web editor.
+          Create your website with React Web Editor.
+          Start it by downloading our library!
         </Sentence>
         <SubSentence>
           Lets Download our library!

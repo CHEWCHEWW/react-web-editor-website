@@ -16,9 +16,9 @@ const HookSection: React.FC = (): React.ReactElement => {
     <Wrapper>
       <CodeSection>
         <MessageWrapper>
-          <MainSentence>Customize your component using hook</MainSentence>
-          <SubSentence>You can import single feature hook.</SubSentence>
-          <SubSentence>It provides simple process to generate your own component.</SubSentence>
+          <MainSentence>Customize your component using hooks</MainSentence>
+          <SubSentence>If you need a single feature from React Web Editor? It’s okay. Use Hooks.</SubSentence>
+          <SubSentence>Hooks provide an easier process of generating your own components.</SubSentence>
           <SubSentence>You can generate web builder application using these hooks</SubSentence>
         </MessageWrapper>
         <CodeEditorWrapper>

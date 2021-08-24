@@ -16,8 +16,10 @@ const VarietyTextSentence: React.FC = (): React.ReactElement => {
           Customize font using Text Editor Component.
         </SubSentence>
         <SubSentence>
-          These examples are made by using default options.
-          You can combine these options with your style.
+          These examples are made by default options we provide.
+        </SubSentence>
+        <SubSentence>
+          You can create your own style with these options.
         </SubSentence>
       </SubSentenceArea>
     </SentenceArea>

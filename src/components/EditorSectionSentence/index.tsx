@@ -11,20 +11,20 @@ const EditorSectionSentence: React.FC = (): React.ReactElement => {
   return (
     <SentenceArea>
       <MainSentence>
-        You can handle WYSIWYG feature easily
+        Introduce the WYSIWYG editor on your website
       </MainSentence>
       <SubSentenceArea>
         <SubSentence>
           You can drag and resize all components.
         </SubSentence>
         <SubSentence>
-          Style Editor Block is a component which handle not only color, but also image.
+        Style Editor Block is a component which handles not only color, but also image.
         </SubSentence>
         <SubSentence>
           Text Editor Block is a simple rich text editor.
         </SubSentence>
         <SubSentence>
-          If you want to use this feature, Put your cursor to component.
+          Put your cursor on components and explore the features.
         </SubSentence>
       </SubSentenceArea>
       <BounceArrowMessage

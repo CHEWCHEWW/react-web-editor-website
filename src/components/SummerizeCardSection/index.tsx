@@ -13,19 +13,19 @@ const SurmmerizeCardSection: React.FC = (): React.ReactElement => {
       <CardRow>
         <MiniCard
           title={"Easy To Use"}
-          subSentence={"By Importing Single Block, you can handle all features just using mouse."}
+          subSentence={"By Importing Single Block, you can handle all features with just using a mouse."}
           src={easyToUse}
           alt="easy to use"
         />
         <MiniCard
           title={"Hooks Friendly"}
-          subSentence={"You can use custom hook for single feature."}
+          subSentence={" You can selectively use features with custom hooks."}
           src={react}
           alt="react"
         />
         <MiniCard
           title={"Expandablity"}
-          subSentence={"It's light and simple. you can generate your own application easy"}
+          subSentence={"It's light and simple. you can generate your own application easily"}
           src={simpleUse} alt="simple use"
         />
       </CardRow>

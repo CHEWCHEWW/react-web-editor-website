@@ -10,8 +10,8 @@ const DragAndDropSentence: React.FC = (): React.ReactElement => {
     <SentenceArea>
       <MainSentence>Simple Drag And Drop</MainSentence>
       <SubSentenceArea>
-        <SubSentence>If you want to use Drag and Drop feature,</SubSentence>
-        <SubSentence>The only you have to do is to put your code to Drag and drop component`s children.</SubSentence>
+        <SubSentence>Need a Drag and Drop function on your component?</SubSentence>
+        <SubSentence>Just wrap the components. Then you are good to go.</SubSentence>
       </SubSentenceArea>
     </SentenceArea>
   );

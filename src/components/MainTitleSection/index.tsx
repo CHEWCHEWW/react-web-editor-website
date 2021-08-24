@@ -9,8 +9,8 @@ const MainTitleSection: React.FC = (): React.ReactElement => {
       <Title>REACT WEB EDITOR</Title>
       <SubTitle>A Simple WYSIWYG editor for react user.</SubTitle>
       <SubSentenceContent>
-        <SubSentence>You can create your style using default features. It is light and intuitive.</SubSentence>
-        <SubSentence>You can test it directly on this site. Click on the pictures.</SubSentence>
+        <SubSentence>You can generate an website using React Web Editor. It is light and intuitive.</SubSentence>
+        <SubSentence>Feel free to try it on this website. Click images!</SubSentence>
       </SubSentenceContent>
       <ButtonsArea>
         <ButtonLink
@@ -60,7 +60,7 @@ const SubSentence = styled.h3`
   font-size: 20px;
 `;
 
-const SubTitle = styled.h3`
+const SubTitle = styled.h2`
   margin: 2rem 0 0 0;
   font-weight: 400;
   font-size: 2rem;
