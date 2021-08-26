@@ -61,7 +61,7 @@ styled component들을 import하여 새로 component를 확장할 수 있도록 
 
 - custom 설정으로 configuration 관리 및 프로젝트 확장을 온전히 제어 할 수 있도록 webpack을 이용해 빌드했습니다.
 
-## What is react-web-editor-website
+## 🔎 What is react-web-editor-website
 <p align="center">[website](https://reactwebeditor.com) </p>
 
 - react-web-editor 라이브러리의 데모 및 설명 사이트입니다.
