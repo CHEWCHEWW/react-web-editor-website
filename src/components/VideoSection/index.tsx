@@ -57,7 +57,7 @@ const SentenceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 28%;
-  margin: 3rem 0 0 40rem;
+  margin: 4rem 0 0 46rem;
   font-family: "Playfair Display", serif;
 `;
 

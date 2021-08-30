@@ -38,7 +38,7 @@ const CardRow = styled.div`
   align-items: center;
   justify-content: space-evenly;
   min-width: 30rem;
-  min-height: 20rem;
+  min-height: 21rem;
   margin: 4rem 0 0 0;
   background-color: ${({ theme }) => theme.CardBackgroundColor};
 `;

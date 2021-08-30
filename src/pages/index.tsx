@@ -1,7 +1,6 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
-import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -27,14 +26,16 @@ const Page: React.FC = (): React.ReactElement => {
       </Head>
       <PageWrapper>
         <Header>
-          <Link href="/docs" passHref>
-            <MenuName>
-              Docs
-            </MenuName>
-          </Link>
           <MenuName
             target="_blank"
-            href="https://github.com/CHEWCHEWW/react-web-editor/"
+            href="https://www.npmjs.com/package/react-web-editor"
+            rel="noreferrer"
+          >
+            npm
+          </MenuName>
+          <MenuName
+            target="_blank"
+            href="https://github.com/CHEWCHEWW/react-web-editor"
             rel="noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} />
